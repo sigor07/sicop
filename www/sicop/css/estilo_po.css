@@ -1,0 +1,283 @@
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    width: 700px;
+}
+
+.par_corpo {
+    text-indent: 250px;
+    line-height: 25px;
+}
+
+.par_min {
+    font-family: Arial, Verdana, Tahoma, sans-serif;
+    font-size: 9px;
+    line-height:10px;
+}
+
+.par_rc {
+    font-family: Arial, Verdana, Tahoma, sans-serif;
+    font-size: 11px;
+    line-height:10px;
+}
+
+.par_corpo_medio {
+    text-indent: 250px;
+    line-height: 20px;
+}
+
+.par_corpo_menor {
+    line-height: 15px;
+}
+
+.par_passagens {
+    text-align:center;
+    line-height: 20px;
+}
+
+.par_ass {
+    text-align:center;
+    line-height: 17px;
+}
+
+.par_ass_dg {
+    text-align: left;
+    line-height: 17px;
+}
+
+.par_dh {
+    text-align:center;
+    font-size:11px;
+    line-height: 17px;
+}
+
+.par_rubrica {
+    text-align: center;
+    font-size: 11px;
+    line-height: 15px;
+    padding-top: 1px;
+}
+
+.par_comp {
+    text-align: center;
+    line-height: 45px;
+}
+
+.par_desinf {
+    line-height: 25px;
+}
+
+.par_forte_n {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight:bold;
+}
+
+.linha_rubrica{
+     height:1px;
+}
+
+div.desinf{
+    width: 490px;
+    float: left;
+    clear: none;
+    margin: 0 auto 0 0px;
+}
+
+div.comp{
+    width: 143px;
+    float: left;
+    clear: none;
+    line-height: 25px;
+    margin: 20px auto 0px 10px;
+    border: 1px solid #000;
+    padding: 5px 1px;
+}
+
+div.user_comp{
+    width: 645px;
+    float: left;
+    clear: none;
+    margin: 10px 0 0 0;
+    padding:0 5px 0 0;
+}
+
+div.rodape{
+    width: 650px;
+    float: left;
+    clear: none;
+    margin: 0 auto 0 0px;
+}
+
+div.rodape_termo{
+    width: 620px;
+    font-size:12px;
+    float: left;
+    clear: none;
+    margin: 0 auto 0 0px;
+}
+div.rodape_termo_seg{
+    width: 650px;
+    font-size:12px;
+    float: left;
+    clear: none;
+    margin: 0 auto 0 0px;
+}
+
+div.corpo{
+    width: 650px;
+    margin: 0px auto;
+    text-align:justify;
+}
+
+div.corpo_apcc{
+    width: 650px;
+    font-size: 11px;
+    margin: 0px auto;
+    text-align:justify;
+}
+
+div.corpo_termo{
+    width: 620px;
+    font-size: 14px;
+    margin: 0px auto 0px 55px;
+    text-align:justify;
+}
+
+div.espaco_termo{
+    height:90px;
+    margin: 0px auto;
+}
+
+div.ass{
+    width: 400px;
+    clear: both;
+    margin: 0 auto;
+    text-align:center;
+}
+
+
+div.ass_apcc{
+    width: 400px;
+    clear: both;
+    font-size: 12px;
+    margin: 0 auto;
+    text-align:center;
+}
+
+div.ass_apcc_dir_geral{
+    width: 400px;
+    clear: both;
+    float: left;
+    font-size: 12px;
+    margin: 0 auto;
+    text-align:left;
+}
+
+
+div.ass_termo_seg_esq{
+    width: 300px;
+    float: left;
+    clear: none;
+    margin-top: 10px;
+}
+
+div.ass_termo_seg_dir{
+    width: 300px;
+    float: right;
+    clear: none;
+    margin-top: 10px;
+}
+
+div.quebra_pag{
+    height: 1px;
+    font-size:1px;
+}
+
+.espaco{
+    padding-right:10px;
+}
+
+div.passagem{
+    font-size: 10px;
+    width: 650px;
+}
+
+table.fixa {
+    table-layout: fixed;
+    word-wrap:break-word;
+}
+
+table.fixa td {
+    vertical-align: middle;
+    padding: 1px 3px;
+}
+
+table.bordasimples {
+    border-collapse: collapse;
+}
+
+table.bordasimples tr td {
+    border:1px solid #000;
+}
+
+table.bordasimples_apcc {
+    border-collapse: collapse;
+    table-layout: fixed;
+    word-wrap:break-word;
+}
+
+table.bordasimples_apcc tr {
+    border:1px solid #000;
+}
+
+table.bordasimples_apcc td {
+    border:1px solid #000;
+    vertical-align: middle;
+    padding: 3px 1px;
+}
+
+table.detento td {
+    vertical-align: middle;
+    padding: 3px 1px;
+}
+
+span.espaco_marg {
+    padding-left: 2px;
+}
+
+/*td {
+    vertical-align: middle;
+    padding: 3px 1px;
+}
+*/
+    ._Header_termo {
+        position:fixed;
+        top: 1px;
+        float: left;
+        clear: none;
+    }
+
+@media print {
+
+    ._Header {
+        position:fixed;
+        top: 1px;
+        float: left;
+        clear: none;
+    }
+
+    ._Header_termo {
+        position:fixed;
+        top: 1px;
+        float: left;
+        clear: none;
+    }
+
+    ._Footer {
+        position:fixed;
+        bottom: 0;
+    }
+
+}

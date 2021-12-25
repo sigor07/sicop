@@ -1,0 +1,136 @@
+/*
+    Document   : stl
+    Created on : 03/06/2011, 10:19:09
+    Author     : Rafael
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*
+   PENDING tentando adpatar este css para formularios
+*/
+p.p_descryp_page {
+    /*    background-color: #F0F0F0;*/
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.CaixaTexto {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 9px;
+    background-color: #F8F8F8;
+    padding: 3px;
+    border: 1px solid #E5E5E5;
+}
+
+div.block_form{
+    margin: 0 auto;
+    border: 1px solid #CCCCCC;
+    width: 900px;
+
+}
+
+div.block_form * {
+    vertical-align: middle;
+}
+
+div.form{
+    margin: 0 auto;
+    background-color:#E6E6E6;
+    border: 1px solid #CCCCCC;
+    width: 434px;
+    /*    height: 100px;*/
+    display: table;
+
+
+
+}
+
+div.linha{
+    border: 1px solid #CCCCCC;
+    display: table-row;
+}
+
+div.add_atend_name_leg,
+div.add_atend_name_field {
+    height: 32px;
+    margin: 0 auto;
+    padding: 1px;
+    float: left;
+    vertical-align: middle;
+}
+
+
+div.add_atend_name_leg{
+    border: 1px solid #CCCCCC;
+    width: 100px;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+div.add_atend_name_field{
+    margin-right: 1px;
+    border: 1px solid #CCCCCC;
+    width: 325px;
+    vertical-align: middle;
+    display: table-cell;
+
+}
+
+div.form_bts{
+    margin: 10px auto;
+    width: 190px;
+    border: 1px solid #CCCCCC;
+    display: block;
+}
+
+table.edit{
+    margin:0 auto;
+    vertical-align:middle;
+    background-color:#E6E6E6;
+    border-collapse: collapse;
+}
+
+table.edit tr {
+    border:2px solid #CCC;
+}
+
+table.edit td {
+    border: 2px solid #CCC;
+    padding: 1px 3px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+table.edit td.table_form_label {
+    width: 80px;
+}
+
+table.edit td.table_form_field {
+    width: 350px;
+}
+
+table.edit td.table_form_div{
+    padding: 0;
+}
+
+table.edit div.table_cell_div {
+    width: 150px;
+    border-right: 2px solid #CCC;
+    /*
+    ao invés de definir o height, definir line-height
+    pois ai o vertical-align funciona
+    */
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    padding: 1px 3px;
+
+/*    height: 50px;
+    vertical-align: middle;
+    display: table-cell;*/
+
+}

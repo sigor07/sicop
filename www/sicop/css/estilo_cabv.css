@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+/* ESTILO PARA CABEÇALHO NA VERTICAL */
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    width: 700px;
+}
+
+div.cab {
+    height: 90px;
+    width: 650px;
+    margin: 0 auto;
+}
+
+div.cab_quali {
+    height: 115px;
+    width: 650px;
+    margin: 0px auto;
+}
+.par_cab_forte {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.par_cab_med {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 10px;
+    line-height: 15px;
+}
+
+/* PARAGRAFO CENTRAL - COORDENADORIA, SECRETARIA, UNIDADE...*/
+div.paragrafo_cab{
+    width: 400px;
+    text-align: center;
+    line-height: 25px;
+    float: left;
+    clear: none;
+    margin: 0px auto 0px 10px;
+    padding: 10px 0px 0px;
+    height: 80px;
+}
+
+div.paragrafo_cab_quali{
+    width: 400px;
+    height: 100px;
+    text-align: center;
+    float: left;
+    clear: none;
+    margin: 0px auto 0px 10px;
+    padding: 5px 0px 0px;
+
+}
+
+/* IMAGEM DA ESQUERDA - BRASAO DO ESTADO*/
+div.imagem_e{
+    width: 90px;
+    position: static;
+    float: left;
+    clear: none;
+    /*margin: 0px 0px 0px 25px;    text-align: center;*/
+}
+
+/* IMAGEM DA DIREITA - BANDEIRA*/
+div.imagem_d{
+    width: 110px;
+    position: static;
+    float: left;
+    clear: none;
+    margin: 10px 0px 0px 20px;    /*text-align: center;*/
+}
+
+/* IMAGEM DA ESQUERDA - BRASAO DO ESTADO*/
+div.imagem_e_quali{
+    width: 90px;
+    position: static;
+    float: left;
+    clear: none;
+    margin-top: 10px;
+    /*margin: 0px 0px 0px 25px;    text-align: center;*/
+}
+
+/* IMAGEM DA DIREITA - BANDEIRA*/
+div.imagem_d_quali{
+    width: 110px;
+    position: static;
+    float: left;
+    clear: none;
+    margin: 20px 0px 0px 20px;    /*text-align: center;*/
+}
+
+/* PARA O ENDEREÇO DA UNIDADE */
+div.end_cab{
+    width: 320px;
+    margin: auto;
+}
+

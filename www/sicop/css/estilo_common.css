@@ -1,0 +1,52 @@
+/*
+    Document   : estilo_common
+    Created on : 17/04/2011, 10:30:51
+    Author     : Rafael
+    Description: Estilos comuns para todas as páginas
+*/
+
+/** {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}*/
+
+/* estilos do sistema */
+@import url("sicop.css");
+
+/* estilos para os menus */
+@import url("superfish.css");
+
+/* estilos para o jquery-ui*/
+@import url("jquery-ui.css");
+
+/* estilos para o fancybox */
+@import url("fancybox.css");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

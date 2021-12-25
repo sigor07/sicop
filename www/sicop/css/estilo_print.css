@@ -1,0 +1,684 @@
+@charset "utf-8";
+
+/*
+    Document   : estilo_print
+    Created on : 10/05/2011, 10:15:40
+    Author     : rafael
+    Description: estilos para as impressões
+*/
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    width: 700px;
+}
+
+body.small {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 10px;
+    width: 700px;
+}
+
+div.corpo{
+    width: 650px;
+    margin: 0px auto;
+    text-align:justify;
+}
+
+.par_corpo {
+    line-height: 20px;
+    font-size: 12px;
+    text-align:center;
+}
+
+.par_min {
+    font-family: Arial, Verdana, Tahoma, sans-serif;
+    font-size: 9px;
+    line-height:10px;
+    vertical-align: bottom;
+}
+
+.par_min_alto {
+    font-family: Arial, Verdana, Tahoma, sans-serif;
+    font-size: 9px;
+    line-height:15px;
+    vertical-align: bottom;
+}
+
+.par_user, .par_user_alto {
+    font-family: Arial, Verdana, Tahoma, sans-serif;
+    font-size: 9px;
+    vertical-align: bottom;
+}
+
+.par_user {
+    line-height: 10px;
+}
+
+.par_user_alto {
+    line-height: 15px;
+}
+
+.par_ass {
+    text-align:center;
+    line-height: 17px;
+}
+
+@media print {
+
+    ._Header {
+        position:fixed;
+        top: 1px;
+        float: left;
+        clear: none;
+    }
+
+    ._Header_termo {
+        position:fixed;
+        top: 1px;
+        float: left;
+        clear: none;
+    }
+
+    ._Footer {
+        position:fixed;
+        bottom: 0;
+        float: left;
+        clear: none;
+    }
+
+}
+
+/*compensação para o cabeçalho*/
+div.espaçamento_cab {
+    height: 100px;
+}
+
+/*destaque das legendas*/
+.destaque_leg {
+    font-weight: bold;
+}
+
+table#fixa {
+    table-layout: fixed;
+    word-wrap:break-word;
+}
+
+table.bordasimples {
+    border-collapse: collapse;
+}
+
+table.bordasimples tr td {border:1px solid #000;}
+
+table.bordasimples_f {
+    border-collapse: collapse;
+    table-layout: fixed;
+    word-wrap:break-word;
+}
+
+table.bordasimples_f tr td {border:1px solid #000;}
+
+table.bordasimples_f th {
+    border-top: 1px solid #FFF;
+    border-right: 1px solid #FFF;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #FFF;
+}
+
+/*th {
+    vertical-align: middle;
+    padding: 3px 1px;
+}*/
+
+div.espaco {
+    padding: 1px 3px;
+}
+
+td.espaco_td {
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+/*td, th {
+    vertical-align: middle;
+    padding: 1px;
+}*/
+
+td.nopading {
+    vertical-align: middle;
+    padding: 0px;
+}
+
+div#desc_pec{
+    width: 470px;
+    height: 100%;
+    float: left;
+    clear: none;
+    border-left:1px solid #000;
+    padding: 3px 3px 7px;
+    vertical-align: middle;
+}
+
+div#tipo_pec{
+    width: 120px;
+    height: 100%;
+    float: left;
+    clear: none;
+    vertical-align:middle;
+    padding: 3px;
+}
+
+
+/*ESTILOS PARA A TABELA BONDE_LIST*/
+
+table.bonde_list{
+    margin:0 auto;
+    vertical-align:middle;
+    border-collapse: collapse;
+}
+
+table.bonde_list tr.cab {
+    border:1px solid transparent;
+    background-color: transparent;
+    text-align: center;
+}
+
+table.bonde_list tr.no_ocurr {
+    text-align:center;
+}
+
+table.bonde_list td {
+    border:1px solid #000;
+    vertical-align: middle;
+    padding: 1px 3px;
+    height:15px;
+}
+
+table.bonde_list td.dest_det {
+    text-align:left;
+    height: 20px;
+    vertical-align: bottom;
+    padding-bottom: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+table.bonde_list td.noh_det {
+    text-align:center;
+    height: 20px;
+}
+
+table.bonde_list th.num_od {
+    width:35px;
+}
+
+table.bonde_list th.nome_det {
+    width:325px;
+}
+
+table.bonde_list th.matr_det {
+    width:90px;
+}
+
+table.bonde_list th.raio_det {
+    width:40px;
+}
+
+table.bonde_list th.cela_det {
+    width:40px;
+}
+
+table.bonde_list th.det_obs {
+    width:100px;
+}
+
+table.bonde_list td.num_od {
+    text-align:center;
+}
+
+table.bonde_list td.nome_det {
+    text-align:left;
+}
+
+table.bonde_list td.matr_det {
+    text-align:center;
+}
+
+table.bonde_list td.raio_det {
+    text-align:center;
+}
+
+table.bonde_list td.cela_det {
+    text-align:center;
+}
+
+table.bonde_list td.det_obs {
+    text-align:center;
+}
+
+
+
+table.bonde_list th.data_bonde {
+    width:80px;
+}
+
+table.bonde_list td.data_bonde {
+    text-align:center;
+}
+
+table.bonde_list th.local_bonde {
+    width:350px;
+}
+
+table.bonde_list td.local_bonde {
+    text-align:left;
+    width:350px;
+}
+
+div.quebra_pag{
+    height: 1px;
+    font-size: 1px;
+    page-break-before: always;
+}
+
+.par_fim {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 0px;
+    font-weight:bold;
+    font-style: italic;
+}
+
+div.hRule {
+    height:0;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    border-top:1px dashed #000;
+}
+div.hRule hr {
+    display:none;
+}
+
+/*
+ * ----------------------------------------------------------
+ * tabela digital
+ * ----------------------------------------------------------
+ */
+
+ table.plan_digital{
+    border:1px solid #000;
+    margin:0 auto;
+    border-collapse: collapse;
+    width: 650px;
+}
+
+table.plan_digital td {
+    border:1px solid #000;
+}
+
+table.plan_digital td.marq_pol {
+    height: 30px;
+    width: 44px;
+}
+
+table.plan_digital td.marq_dedos {
+    height: 30px;
+    width: 37px;
+}
+
+table.plan_digital td.marq_mao {
+    width: 30px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table.plan_digital td.digital_pol,
+table.plan_digital td.digital_dedos {
+    text-align: center;
+    vertical-align: text-top;
+    padding: 3px 1px;
+    height: 146px;
+}
+
+/*table.plan_digital td.digital_pol {
+    height: 30px;
+    width: 44px;
+}
+
+table.plan_digital td.digital_dedos {
+    height: 30px;
+    width: 37px;
+}*/
+
+
+/*td.digital {
+    vertical-align: text-top;
+    padding: 3px 1px;
+}*/
+
+
+/*
+ * ----------------------------------------------------------
+ * /tabela digital
+ * ----------------------------------------------------------
+ */
+
+
+/*
+ * ----------------------------------------------------------
+ * tabela qualificativa de detento
+ * ----------------------------------------------------------
+ */
+
+table.quali_det_foto{
+    border:1px solid #000;
+    margin:0 auto;
+    vertical-align: middle;
+    border-collapse: collapse;
+    width: 650px;
+}
+
+table.quali_det_foto td {
+    border:1px solid #000;
+    vertical-align: middle;
+    padding: 1px 3px;
+    height: 20px
+}
+
+table.quali_det_foto td.td_det_grd {
+    width: 645px;
+    text-align: left;
+}
+
+table.quali_det_foto td.td_det_med {
+    width: 310px;
+}
+
+table.quali_det_foto td.td_det_min,
+table.quali_det_foto td.td_det_raio {
+    width: 175px;
+}
+
+table.quali_det_foto td.td_det_foto,
+table.quali_det_foto td.td_det_cela {
+    width: 144px;
+    text-align: center;
+    padding: 0;
+}
+
+table.quali_det_foto td.td_det_cela {
+    width: 144px;
+}
+
+table.quali_det_foto td.td_det_raio,
+table.quali_det_foto td.td_det_cela {
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.quali_sit_det{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.det_achegar{
+    color: #990000;
+}
+
+.det_nacasa{
+    color: #000000;
+}
+
+.det_trana{
+    color: #0000FF;
+}
+
+.det_transf{
+    color: #CC9900;
+}
+
+.det_excl{
+    color: #009900;
+}
+
+.det_evadido{
+    color: #0080C0;
+}
+
+.det_falecido{
+    color: #800080;
+}
+
+.det_trada{
+    color: #FF0000;
+}
+
+.det_tranada{
+    color: #FF0000;
+}
+
+/*
+ * ----------------------------------------------------------
+ * /tabela qualificativa de detento
+ * ----------------------------------------------------------
+ */
+
+/*
+ * ----------------------------------------------------------
+ * ordem_escolta.php, ordem_saida.php
+ * ----------------------------------------------------------
+ */
+
+div.corpo_escolta{
+    width: 650px;
+    font-size: 11px;
+    margin: 0px auto;
+    text-align:justify;
+}
+
+.par_corpo_escolta {
+    text-indent: 250px;
+    line-height: 20px;
+    font-size: 11px;
+    text-align: justify;
+}
+
+.par_dest_inf_escolta {
+    line-height: 15px;
+    font-size: 11px;
+    text-align: justify;
+}
+
+.par_local_escolta {
+    line-height: 15px;
+    font-size: 11px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.par_local_escolta_min {
+    line-height: 15px;
+    font-size: 9px;
+    text-align: left;
+    font-weight: normal;
+    vertical-align: text-top;
+}
+
+.par_destaque_ord_saida {
+    line-height: 30px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.par_ord_saida_obs {
+    line-height: 15px;
+    font-size: 11px;
+    text-align: left;
+}
+
+/* utilizado na filiação, artigo, etc, do detento */
+.par_min_escolta {
+    font-family: Arial, Verdana, Tahoma, sans-serif;
+    font-size: 9px;
+    line-height:13px;
+}
+
+table.pedido_escolta{
+    border:1px solid #000;
+    margin:0 auto;
+    vertical-align: middle;
+    border-collapse: collapse;
+    width: 650px;
+}
+
+table.pedido_escolta td {
+    /*border:1px solid #000;*/
+    vertical-align: middle;
+    padding: 1px 3px;
+    /*    height:15px;*/
+}
+
+table.pedido_escolta td.num_od {
+    border:1px solid #000;
+    text-align:center;
+    width: 30px;
+}
+
+table.pedido_escolta td.nome_det {
+    text-align: left;
+    width: 330px;
+    height:15px;
+}
+
+table.pedido_escolta td.det_matr {
+    text-align: left;
+    width: 140px;
+    height:15px;
+}
+
+table.pedido_escolta td.det_rg {
+    text-align: left;
+    width: 120px;
+    height:15px;
+}
+
+table.pedido_escolta td.dest_det {
+    text-align:left;
+    height: 20px;
+    vertical-align: bottom;
+    padding-bottom: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+div.dest_inf_escolta{
+    width: 300px;
+    height: 80px;
+    margin: 0 auto 0 0;
+}
+
+/*
+ * ----------------------------------------------------------
+ * /ordem_escolta.php, /ordem_saida.php
+ * ----------------------------------------------------------
+ */
+
+
+/*
+ * ----------------------------------------------------------
+ * ficha_quali_visit.php
+ * ----------------------------------------------------------
+ */
+
+div.corpo_quali_visit{
+    font-size: 10px;
+    margin: 0px auto;
+    text-align:justify;
+    width: 650px;
+}
+
+.par_extra_forte {
+    font-size: 18px;
+    font-style: italic;
+    line-height: 30px;
+}
+
+.par_forte_visit {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.visit_ativa{
+    color: #000000;
+}
+
+.visit_susp{
+    color: #CC9900;
+}
+
+.visit_excl{
+    color: #FF0000;
+}
+
+table.quali_visita{
+    border:1px solid #000;
+    margin:0 auto;
+    vertical-align:middle;
+    border-collapse: collapse;
+    width: 650px;
+}
+
+table.quali_visita td {
+    border:1px solid #000;
+    vertical-align: middle;
+    padding: 1px 3px;
+    height: 20px
+}
+
+table.quali_visita td.td_visit_grd {
+    width: 645px;
+    text-align: left;
+}
+
+table.quali_visita td.td_visit_med {
+    width: 310px;
+}
+
+table.quali_visita td.td_visit_min {
+    width: 175px;
+}
+
+table.quali_visita td.td_visit_foto {
+    width: 144px;
+    text-align: center;
+    padding: 0;
+}
+
+/*
+ * ----------------------------------------------------------
+ * /ficha_quali_visit.php
+ * ----------------------------------------------------------
+ */
+
+/*
+ * ----------------------------------------------------------
+ * rol_visitas.php
+ * ----------------------------------------------------------
+ */
+
+ div.num_rows_rol{
+    text-align: center;
+    line-height: 7px;
+    margin: auto;
+    padding: 0 0 2px 0;
+}
+
+/*
+ * ----------------------------------------------------------
+ * /rol_visitas.php
+ * ----------------------------------------------------------
+ */

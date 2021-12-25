@@ -1,0 +1,553 @@
+@charset "utf-8";
+/* PÁGINA DE ESTILOS CSS
+Name:            estilos.css
+System:            SisPessoal
+Date:             29/03/2006
+Author:         MSGeek - MÁRCIO SOARES RIBEIRO
+E-mail:            msgeekms@gmail.com; msribeiro@sap.sp.gov.br
+Description:    Página para formatar todos os estilos
+*/
+
+/* CORPO DA PÁGINA */
+body {
+    /* cor do fundo: cinza */
+    background-color:#CCCCCC; 
+    /* tipo de fonte */    
+    font-family: Arial, Helvetica, sans-serif;
+    /* tamanho da fonte */    
+    font-size: 9px; /*10px;
+    /* cor da fonte: preto */    
+    color: #000000;
+}
+
+
+/* LINKS */
+a:link {
+    /* cor do link na página: cinza + claro*/
+    color: #333333; 
+    /* alinhamento do texto */
+    text-align: center;        
+    /* não fica com linha sublinhada*/    
+    text-decoration: none;
+}
+a:hover {
+    /* fica com linha sublinhada*/    
+    text-decoration: underline;
+}
+a:visited {
+    /* cor do link na página: cinza escuro*/
+    color: #000000;
+    /* não fica com linha sublinhada*/    
+    text-decoration: none;    
+}
+
+
+/* PÁGINAS COM MENSAGENS */
+.msg_recebida {
+    background-image: url("../images/mensagem/msg.gif");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.msg_inicial {
+    background-image: url("../images/atencao.jpg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.msg_atencao{
+    font-size: 18px; /*24px; */
+    font-weight: bold;
+}
+
+.msg_atencao_menor{
+    font-size: 14px; /*24px; */
+    font-weight: bold;
+}
+
+/* MENU ESQUERDO */
+#menu_top a{
+      voice-family: inherit;
+      height: 11px;
+    text-decoration: none;
+    color:#FFFFFF;
+    }
+#menu_top a:link, #menu_top a:visited{
+    color:#FFFFFF;
+    display: block;
+    background: url(../images/menu_top.gif);
+    padding: 8px 0 0 10px;
+    }
+#menu_top a:hover{
+    color:#0000FF;
+    background: url(../images/menu_top.gif) 0 -32px;
+    padding: 8px 0 0 10px;
+    }
+
+
+/* TÍTULOS DA PÁGINA */
+.secretaria {
+    /* cor da fonte: preto*/
+    color: #000000; 
+    /* estilo da fonte: negrito*/
+    font-weight: bold;
+    /* tamanho da fonte*/
+    font-size: 10px;
+    }
+
+.coordenadoria {
+    /* cor da fonte: preto*/
+    color: #000000; 
+    /* estilo da fonte: negrito*/
+    font-weight: bold;
+    /* tamanho da fonte*/
+    font-size: 9px; /*10px; */
+    }
+    
+.sispessoal {
+    /* cor da fonte: cinza um pouco escuro*/
+    color: #333333;
+    /* tamanho da fonte*/
+    font-size: 13px;
+    }
+
+.description {
+    /* cor da fonte: cinza um pouco escuro*/
+    color: #333333; 
+    /* tamanho da fonte*/
+    font-size:9px; /*10px; */
+    }
+
+.msgeek {
+    /* tamanho da fonte*/
+    font-size: 7px;
+    /* cor da fonte: preto */
+    color: #000000; 
+    /* estilo da fonte: itálico*/
+    font-style: italic;
+    /* estilo da fonte: negrito*/
+    font-weight: bold;
+}
+
+.date {
+    /* cor da fonte: preto*/
+    color: #000000; 
+    /* tamanho da fonte*/
+    font-size: 9px; /*10px; */
+    /* estilo da fonte: negrito*/
+    font-weight: bold;
+    }
+
+.hour {
+    /* cor da fonte: preto*/
+    color:#000000; 
+    /* tamanho da fonte*/
+    font-size:  9px; /*10px; */
+    /* alinhamento do texto */
+    text-align : center;    
+    }
+
+
+.relogio{
+    /* cor da fonte: preto */
+    color:#000000;
+    /* cor do fundo: cinza */
+    background-color:#D6D6D6;
+    /* alinhamento do texto */
+    text-align : center;
+    /* borda interna de baixo: branca */
+    border-color:#FFFFFF;
+    /* borda interna de cima: preta */
+    border-top-color:#333333;
+}
+
+
+/* MENU DE OPÇÕES */
+.menu_option {
+    /* cor da fonte: preto */
+    color: #000000;
+    /* cor do fundo: cinza */
+    background-color: #CCCCCC;
+    /* tipo da fonte: negrito */        
+    font-weight: bold;
+    /* alinhamento do texto */
+    text-align : center;
+}
+
+
+/* FONTE DO MENU DE OPÇÕES */
+.fonte_menu_option {
+    /* cor da fonte: azul */
+    color: #0000CC;
+    /* tipo da fonte: negrito */        
+    font-weight: bold;
+    /* alinhamento do texto */
+    text-align : center;
+}
+
+
+/* MENSAGEM */
+.ok {
+    /* cor da fonte: azul*/
+    color: #0000FF; 
+    /* tamanho da fonte*/
+    font-size: 10px;
+    /* estilo da fonte: negrito*/
+    font-weight: bold;    
+    /* alinhamento do texto */
+    text-align : center;    
+    }
+    
+.error {
+    /* cor da fonte: vermelho*/
+    color:#FF0000; 
+    /* tamanho da fonte*/
+    font-size: 10px;
+    /* estilo da fonte: negrito*/
+    font-weight: bold;    
+    /* alinhamento do texto */
+    text-align : center;    
+    }
+    
+/* VISIBILIDADE NO FORMULÁRIO */
+.visible{
+    /* mostra o formulário */
+    display: block;
+}
+.hidden{
+    /* oculta o formulário */
+    display: none;
+}
+
+/* CAMADAS DE OPÇÃO (np_incluir.php) */
+#Layer_funcionario {
+    /* posição absoluta na página */
+    position:absolute;
+    /* largura da camada: 600 ptos */
+    width:600px;
+    /* altura da camada: 400 ptos */
+    height:400px;
+    z-index:1;
+    /* distância da margem esquerda: 200 ptos */
+    left: 100px;
+    /* distância do topo: 160 ptos */
+    top: 190px;
+}
+#Layer_cargo {
+    /* posição absoluta na página */
+    position:absolute;
+    /* largura da camada: 400 ptos */
+    width:600px;
+    /* altura da camada: 200 ptos */
+    height:400px;
+    z-index:1;
+    /* distância da margem esquerda: 200 ptos */
+    left: 100px;
+    /* distância do topo: 160 ptos */
+    top: 190px;
+}
+#Layer_subquadro {
+    /* posição absoluta na página */
+    position:absolute;
+    /* largura da camada: 400 ptos */
+    width:600px;
+    /* altura da camada: 200 ptos */
+    height:400px;
+    z-index:1;
+    /* distância da margem esquerda: 200 ptos */
+    left: 100px;
+    /* distância do topo: 160 ptos */
+    top: 190px;
+}
+#Layer_ua {
+    /* posição absoluta na página */
+    position:absolute;
+    /* largura da camada: 400 ptos */
+    width:600px;
+    /* altura da camada: 200 ptos */
+    height:400px;
+    z-index:1;
+    /* distância da margem esquerda: 200 ptos */
+    left: 100px;
+    /* distância do topo: 160 ptos */
+    top: 190px;
+}
+#Layer_setor {
+    /* posição absoluta na página */
+    position:absolute;
+    /* largura da camada: 400 ptos */
+    width:600px;
+    /* altura da camada: 200 ptos */
+    height:400px;
+    z-index:1;
+    /* distância da margem esquerda: 200 ptos */
+    left: 100px;
+    /* distância do topo: 160 ptos */
+    top: 190px;
+}
+#Layer_diretoria{
+    /* posição absoluta na página */
+    position:absolute;
+    /* largura da camada: 400 ptos */
+    width:600px;
+    /* altura da camada: 200 ptos */
+    height:400px;
+    z-index:1;
+    /* distância da margem esquerda: 200 ptos */
+    left: 100px;
+    /* distância do topo: 160 ptos */
+    top: 190px;
+}
+#Layer_horario {
+    /* posição absoluta na página */
+    position:absolute;
+    /* largura da camada: 400 ptos */
+    width:600px;
+    /* altura da camada: 200 ptos */
+    height:400px;
+    z-index:1;
+    /* distância da margem esquerda: 200 ptos */
+    left: 100px;
+    /* distância do topo: 160 ptos */
+    top: 190px;
+}
+#Layer_falta {
+    /* posição absoluta na página */
+    position:absolute;
+    /* largura da camada: 400 ptos */
+    width:600px;
+    /* altura da camada: 200 ptos */
+    height:400px;
+    z-index:1;
+    /* distância da margem esquerda: 200 ptos */
+    left: 100px;
+    /* distância do topo: 160 ptos */
+    top: 190px;
+}
+
+/* CAMADAS DE OPÇÃO (adm_senha.php) */
+#Layer_ver{
+    /* posição absoluta na página */
+    position:absolute;
+    /* largura da camada: 600 ptos */
+    width:800px;
+    /* altura da camada: 400 ptos */
+    height:400px;
+    z-index:1;
+    /* distância da margem esquerda: 200 ptos */
+    left: 100px;
+    /* distância do topo: 160 ptos */
+    top: 180px;
+}
+#Layer_criar{
+    /* posição absoluta na página */
+    position:absolute;
+    /* largura da camada: 600 ptos */
+    width:500px;
+    /* altura da camada: 400 ptos */
+    height:400px;
+    z-index:1;
+    /* distância da margem esquerda: 200 ptos */
+    left: 200px;
+    /* distância do topo: 160 ptos */
+    top: 180px;
+}
+#Layer_zerar{
+    /* posição absoluta na página */
+    position:absolute;
+    /* largura da camada: 600 ptos */
+    width:500px;
+    /* altura da camada: 400 ptos */
+    height:400px;
+    z-index:1;
+    /* distância da margem esquerda: 200 ptos */
+    left: 200px;
+    /* distância do topo: 160 ptos */
+    top: 180px;
+}
+#Layer_excluir{
+    /* posição absoluta na página */
+    position:absolute;
+    /* largura da camada: 400 ptos */
+    width:500px;
+    /* altura da camada: 200 ptos */
+    height:400px;
+    z-index:1;
+    /* distância da margem esquerda: 200 ptos */
+    left: 200px;
+    /* distância do topo: 160 ptos */
+    top: 180px;
+}
+#Layer_relat_func{
+    /* posição absoluta na página */
+    position:absolute;
+    /* largura da camada: 400 ptos */
+    width:500px;
+    /* altura da camada: 200 ptos */
+    height:400px;
+    z-index:1;
+    /* distância da margem esquerda: 200 ptos */
+    left: 200px;
+    /* distância do topo: 160 ptos */
+    top: 180px;
+}
+
+
+/* CAMADAS DE OPÇÃO (relatorio.php) - Diversos */
+#Layer_regularizacoes{
+    /* posição absoluta na página */
+    position:absolute;
+    /* largura da camada: 600 ptos */
+    width:500px;
+    /* altura da camada: 400 ptos */
+    height:400px;
+    z-index:1;
+    /* distância da margem esquerda: 200 ptos */
+    left: 200px;
+    /* distância do topo: 160 ptos */
+    top: 180px;
+}
+#Layer_ferias_alter{
+    /* posição absoluta na página */
+    position:absolute;
+    /* largura da camada: 600 ptos */
+    width:500px;
+    /* altura da camada: 400 ptos */
+    height:400px;
+    z-index:1;
+    /* distância da margem esquerda: 200 ptos */
+    left: 200px;
+    /* distância do topo: 160 ptos */
+    top: 180px;
+}
+        
+/* RETORNO DE PESQUISA */
+.form_cancelado {
+    /* cor da fonte: cinza um pouco escuro*/
+    color:#333333;
+    /* tamanho da fonte*/
+    font-size:  9px; /*10px; */
+    /* texto fica sobrescrito*/    
+    text-decoration:line-through;
+}
+
+.titulo_pesq {
+    /* cor da fonte: cinza um pouco escuro*/
+    color: #333333;
+    /* tamanho da fonte*/
+    font-size: 10px;
+    /* tipo da fonte: negrito */
+    font-weight: bold;
+}
+
+/* RETORNO DE PESQUISA */
+.titulo_pesq_esq {
+    /* cor da fonte: cinza um pouco escuro*/
+    color: #333333 ;
+    /* tamanho da fonte*/
+    font-size: 10px;
+    /* tipo da fonte: negrito */
+    font-weight: bold;
+    /* alinhamento do texto: centro */
+    text-align : left;
+}    
+    
+/* FORMULÁRIOS */
+
+.senha {
+    font-size: 8px;
+    }
+
+/* Título do Formulário */
+.titulo_form {
+    /* tamanho da fonte */
+    font-size:  9px; /*10px; */
+    /* cor da fonte: cinza um pouco escuro */
+    color: #000000;
+    /* alinhamento do texto: centro */
+    text-align : center;
+    /* tipo da fonte: negrito */
+    font-weight: bold;
+}
+
+/* Título do Campo do Formulário */
+.titulo_campo {
+    /* tamanho da fonte */
+    font-size:  9px; /*10px; */
+    /* cor da fonte: cinza um pouco escuro */
+    color: #333333;
+    /* alinhamento do texto: centro */
+    text-align : left;
+}
+
+/* Dados das opções do Formulário */
+.dados_option {
+    /* tamanho da fonte */
+    font-size:  9px; /*10px; */
+    /* alinhamento do texto: centro */
+    text-align : center;
+}
+
+
+/* Opções de dados do Formulário (ESQUERDA)*/
+.dados_option_esq {
+    /* tamanho da fonte */
+    font-size:  9px; /*10px; */
+    /* alinhamento do texto: centro */
+    text-align : left;
+}
+    
+/* Dados dos Campos do Formulário */
+.dados_campo {
+    /* alinhamento do texto: centro */
+    text-align : center;
+}
+
+/* Dados dos Campos do Formulário (DIREITA) */
+.dados_campo_dir {
+    /* alinhamento do texto: centro */
+    text-align : right;
+    /* cor da fonte: cinza escuro */
+    color: #666666;
+}
+
+/* Dados dos Campos do Formulário (ESQUERDA) */
+.dados_campo_esq {
+    /* alinhamento do texto: ESQUERDA */
+    text-align : left;
+    /* cor da fonte: cinza escuro */
+    color: #666666;
+}
+
+/* Dados dos Campos do Formulário preenchido*/
+.dados_campo_preench {
+    /* tamanho da fonte */
+    font-size:  9px; /*10px; */
+    /* alinhamento do texto: centro */
+    text-align : left;
+    /* tipo da fonte: negrito */        
+    font-weight: bold;
+}
+
+/* Dados dos Campos do Formulário preenchido para EXIBIR */
+.dados_campo_exibe{
+    /* tamanho da fonte */
+    font-size: 11px;
+    /* cor da fonte: cinza um pouco escuro */
+    color: #333333;
+    /* alinhamento do texto: centro */
+    text-align : center;
+}
+
+
+/* Dados dos Campos de Mensagens preenchido*/
+.mensagens {
+    /* cor da fonte: preto*/
+    color: #000000; 
+    /* estilo da fonte: negrito*/
+    font-weight: bold;
+    /* tamanho da fonte*/
+    font-size: 10px;
+    /* alinhamento do texto: esquerda */
+    text-align : left;    
+}

@@ -1,0 +1,185 @@
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 10px;
+    width: 700px;
+}
+
+.par_min {
+    font-family: Arial, Verdana, Tahoma, sans-serif;
+    font-size: 9px;
+    line-height:15px;
+}
+
+.fonte_forte {
+    font-size: 14px;
+}
+
+.paragrafo9 {
+    font-family: Arial, Verdana, Tahoma, sans-serif;
+    font-size: 9px;
+}
+.paragrafo10 {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 10px;
+    line-height: 5px;
+}
+.paragrafo10negrito {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+}
+.paragrafo12 {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+}
+.paragrafo12negrito {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+.paragrafo12Italico {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.paragrafo14 {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+}
+
+.paragrafo14Italico {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.paragrafo16Italico {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.paragrafo18Italico {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 30px;
+}
+
+.paragrafo20Italico {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.par_forte_n {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight:bold;
+}
+
+.par_medio_n {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight:bold;
+}
+
+.par_corpo {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 11px;
+    line-height: 15px;
+    text-align:justify;
+}
+
+.par_quebra_linha {    
+    line-height: 15px;
+}
+
+.par_data {
+    line-height: 20px;
+    text-align:right;
+}
+
+.par_ass {
+    line-height: 15px;
+}
+
+div.hRule {
+        height:0;
+        margin:0;
+        padding:0;
+        overflow:hidden;
+        border-top:1px dashed #000;
+}
+
+div.hRule hr { display:none; }
+
+div.corpo{
+    width: 650px;
+    margin: 0px auto 0;
+}
+
+div.linha{
+    width: 700px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+}
+
+div#grupo{
+    width: 400px;
+    padding: 5px;
+    margin:0 auto;
+}
+
+div.paragrafo{
+    width: 350px;
+    text-align: center;
+    line-height: 7px;
+    
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    
+    padding-top: 25px;
+    padding-right: 0px;
+    padding-bottom: 2px;
+    padding-left: 0px;
+    
+    clear: none;
+}
+
+div.paragrafo1{
+    width: 650px;
+    text-align: center;
+    line-height: 7px;
+    
+    margin: auto;
+    
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 2px;
+    padding-left: 0;
+}
+
+table.bordasimples {
+    border-collapse: collapse;
+    table-layout: fixed;
+    word-wrap:break-word;
+}
+
+table.bordasimples tr td {
+    border:1px solid #000;
+}
+
+table.bordasimples td {
+    padding-right: 3px;
+    padding-left: 3px;
+    vertical-align: middle;
+}
+

@@ -1,0 +1,158 @@
+@charset "utf-8";
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    width: 700px;
+}
+
+.par_corpo {
+    text-indent: 250px;    
+    line-height: 20px;
+    text-align:justify;
+}
+
+.par_corpo_medio {
+    text-indent: 250px;    
+    line-height: 20px;
+}
+
+.par_min {
+    font-family: Arial, Verdana, Tahoma, sans-serif;
+    font-size: 9px;
+    line-height:15px;
+}
+
+.par_data {
+    line-height: 20px;
+    text-align:right;
+}
+
+.par_data_e {
+    line-height: 20px;
+    text-align:left;
+}
+
+.par_ass {
+    line-height: 15px;
+}
+
+.par_forte_n {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight:bold;
+}
+
+div.corpo{
+    width: 650px;
+    margin: 0px auto 0;
+    text-align:justify;
+}
+
+
+div.texto_ciente{
+    width: 640px;
+    margin: 5px auto 0;
+}
+
+div.ass_func{
+    width: 300px;
+    float: left;
+    clear: none;
+    margin-top: 10px;
+}
+
+div.ass_det{
+    width: 300px;
+    float: right;
+    clear: none;
+    margin-top: 10px;
+}
+
+div.digital{
+    width: 650px;
+    float: right;
+    clear: none;
+    margin-top: 10px;
+}
+
+div.rodape{
+    width: 650px;
+    float: left;
+    clear: none;
+    margin: 0 auto 0 0px;
+}
+
+table#fixa {
+    table-layout: fixed;
+    word-wrap:break-word;
+}
+
+table.fixa {
+    table-layout: fixed;
+    word-wrap:break-word; 
+}
+
+table.fixa td {
+    vertical-align: middle;
+    padding: 1px 3px;
+}
+
+table.det_pec {
+    table-layout: fixed;
+    word-wrap:break-word; 
+}
+
+table.det_pec td {
+    vertical-align: middle;
+    padding: 3px;
+}
+
+table.pec_r { /* pec_r = pecúlio - relação */
+    table-layout: fixed;
+    word-wrap:break-word;
+    border-collapse: collapse;
+}
+
+table.pec_r tr td {border:1px solid #000;}
+
+table.bordasimples {
+    border-collapse: collapse;
+}
+
+table.bordasimples tr td {border:1px solid #000;}
+
+table.bordasimples_f {
+    border-collapse: collapse;
+    table-layout: fixed;
+    word-wrap:break-word;
+}
+
+table.bordasimples_f tr td {border:1px solid #000;}
+
+td {
+    vertical-align: middle;
+    padding: 3px 1px 3px 3px;
+}
+
+td.nopading {
+    vertical-align: middle;
+    padding: 0px;
+}
+
+td.digital {
+    vertical-align: text-top;
+    padding: 3px 1px;
+}
+
+td.pol {
+    vertical-align: text-top;
+    font-size:8px;
+    padding: 3px 1px;
+}
+
+td.ass_id {
+    vertical-align: text-bottom;
+    font-size:8px;
+    padding: 3px 1px;
+}

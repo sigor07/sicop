@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 10px;
+    width: 700px;
+}
+
+.par_corpo {
+    text-indent: 250px;    
+    line-height: 20px;
+    text-align:justify;
+}
+
+.par_min {
+    font-family: Arial, Verdana, Tahoma, sans-serif;
+    font-size: 9px;
+    line-height:15px;
+}
+
+div.corpo_cartao{
+    width: 700px;
+    margin: 0px auto 0;
+    text-align:justify;
+}
+
+/* FORMATOS PARA O CARTAO DE IDENTIFICAÇÃO */
+div.cartao_det{
+    width: 340px;
+    height: 5.4cm;
+    float: left;
+    clear: none;
+    vertical-align:middle;
+    border:1px solid #000;
+    margin: 0px auto;
+    font-size:9px;
+    line-height:15px;
+}
+
+.par_cartao_top {
+    text-align:center;
+    font-size:11px;
+    line-height:20px;
+}
+
+.par_cartao {
+    text-align:justify;
+    padding-left:5px;
+}
+
+.par_cartao_tv {
+    text-align:center;
+    padding-left:5px;
+}
+
+.par_cartao_rc {
+    line-height: 25px;
+    font-size:12px;
+    text-align:center;
+}
+
+.par_data {
+    line-height: 20px;
+    text-align:right;
+    padding-right:5px;
+}
+
+.normas{
+    margin-top:5px;
+    width:335px;
+    float: left;
+    clear: none;
+}
+
+/* FIM DOS FORMATOS PARA O CARTAO DE IDENTIFICAÇÃO */
+

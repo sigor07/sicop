@@ -1,0 +1,3 @@
+<IfModule mod_php5.c>
+	#php_value include_path ".;Z:/htdocs/sicop/int/;%{REQUEST_URI} "
+</IfModule>

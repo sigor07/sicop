@@ -1,0 +1,109 @@
+@charset "utf-8";
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    width: 700px;
+}
+
+.par_min {
+    font-family: Arial, Verdana, Tahoma, sans-serif;
+    font-size: 9px;
+}
+
+.par_corpo {
+    /*text-indent: 250px*/;
+    line-height: 20px;
+}
+
+.par_forte_i {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    font-style: italic;
+}
+
+.par_forte_n {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight:bold;
+}
+
+div.desinf{
+    width: 500px;
+    float: left;
+    clear: none;
+    margin: 0 auto 0 0px;
+}
+
+div.comp{
+    width: 145px;
+    float: left;
+    clear: none;
+    line-height: 25px;
+    margin: 30px auto 0px 0px;
+    border: 1px solid #000;
+    padding: 5px 0px;
+}
+
+div.corpo{
+    width: 650px;
+    margin: 0px auto 0;
+    text-align:justify;
+}
+
+div.hRule {
+        height:0;
+        margin:0;
+        padding:0;
+        overflow:hidden;
+        border-top:1px dashed #000;
+}
+div.hRule hr { display:none; }
+
+table.bordasimples {
+    border-collapse: collapse;
+}
+
+table.bordasimples tr td {border:1px solid #000;}
+
+table.bordasimples_f {
+    border-collapse: collapse;
+    table-layout: fixed;
+    word-wrap:break-word;
+}
+
+table.bordasimples_f tr td {border:1px solid #000;}
+
+td {
+    vertical-align: middle;
+    padding: 3px 1px;
+}
+
+td.jumbo {
+    vertical-align: text-top;
+    padding: 3px 1px;
+}
+
+@media print {
+
+    ._Header {
+        position:fixed;
+        top: 1px;
+        float: left;
+        clear: none;
+    }
+
+    ._Header_termo {
+        position:fixed;
+        top: 1px;
+        float: left;
+        clear: none;
+    }
+
+    ._Footer {
+        position:fixed;
+        bottom: 0;
+    }
+
+}

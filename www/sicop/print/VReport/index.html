@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>VReport v0.2 BETA</title>
+
+<style>
+#_VReportHeader {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px dashed gray;
+    width: 100%;
+    padding: 3px;
+    text-align: center;
+}
+
+#_VReportFooter {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    border-top: 1px dashed gray;
+    width: 100%;
+    text-align: center;
+}
+
+#_VReportContent{
+    font-family:Tahoma, Geneva, sans-serif;
+    font-size: 14px;
+}
+
+</style>
+
+<link rel="stylesheet" type="text/css" href="VReport_print.css" media="print" />
+<link rel="stylesheet" type="text/css" href="VReport_screen.css" media="screen" />
+
+</head>
+
+<body>
+
+
+<div id="_VReportHeader"> 
+ <img src="logo.jpg" /><br />
+ Aqui vem o cabeçalho que vai aparecer em todas as páginas de impressão.
+</div>
+
+<div id="_VReportContent">
+
+<strong>VReport</strong> é uma extensão (pequena biblioteca) em javaScript openSorce criada por Vinícius Nunes Lage,
+estudante de Engenharia de Controle e Automação pela Universidade Federal de Ouro Preto, e atualmente desenvolvedor de sistemas web
+da Câmara Municipal de Ouro Preto, de onde surgiu a extensão VReport, visto que, depois de muita pesquisa sobre
+relatórios com cabeçalho e rodapé para impressão em sistemas web, não foi encontrado nenhuma solução perfeita.<br />
+Para contatos: op.vini@gmail.com ou <a href="http://www.isecretaria.net/vinicius">www.isecretaria.net/vinicius</a><br /><br />
+
+Este "manual" já está escrito de forma a ser impresso com cabeçalho e rodapé em todas as páginas usando o VReport, você
+pode visualizar o código fonte deste arquivo para ver melhor como funciona, ou então <a href="blankExample.html">ver o exemplo mais simples.</a><br /><br />
+
+Aqui vem o conteúdo completo.<br />
+Pode ser inserido HTML normalmente.<br />
+Para visualizar este exemplo, clique em <strong> visualizar impressão </strong> que se encontra no menu <strong> arquivo </strong> do seu navegador.<br />
+O conteúdo pode ser extenso sem limites, ainda sim a impressão irá funcionar normalmente.<br />
+Você pode colocar estilos ao rodapé, cabeçalho e conteúdo sem problemas, mas faça isso <strong> nesta página ou em um arquivo de estilo separado </strong>, <span style="color: #F00;"> não altere </span> os arquivos <i> VReport_print.css </i>, <i> VReport_screen.css </i>, <i> VReport.js </i>.<br /><br />
+
+<strong>Download:</strong> <a href="VReport.rar">clique aqui para baixar gratuitamente a versão 0.2 beta.</a><br /><br />
+
+<strong>Atenção:</strong><br />
+No estilo de <i>#_VReportHeader</i> não trabalhe com a propriedade <i> position </i>.<br /><br />
+
+<strong>A sua página HTML deverá ter os seguintes includes entre as tags &lt;head&gt;&lt;/head&gt;</strong> <br />
+<i>
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;VReport_print.css&quot; media=&quot;print&quot; /&gt;<br />
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;VReport_screen.css&quot; media=&quot;screen&quot; /&gt;
+</i><br /><br />
+
+Ao final do seu arquivo, antes da tag <i>&lt;/body&gt;</i>, insira 
+<i>&lt;script src=&quot;VReport.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; </i><br /><br />
+
+<strong>Feito isso, basta colocar no seu HTML:</strong><br />
+Para o cabeçalho, insira seu HTML em: <i>&lt;div id=&quot;_VReportHeader&quot;&gt; aqui &lt;/div&gt; </i><br />
+Para o conteúdo, insira seu HTML em: <i> &lt;div id=&quot;_VReportContent&quot;&gt; aqui &lt;/div&gt;</i><br />
+Para o rodapé, insira seu HTML em: <i> &lt;div id=&quot;_VReportFooter&quot;&gt; aqui &lt;/div&gt; </i><br /><br />
+
+Se você utiliza o VReport em seu sistema, faça citações para ajudar-nos a divulgar.<br />
+A biblioteca pode ser utilizada por qualquer pessoa para qualquer fim.<br />
+Direitos reservados desde 2009.<br /><br />
+
+<strong>Agradecimentos:</strong><br />
+- Câmara Municipal de Ouro Preto<br />
+- Leonardo Basílio<br />
+- <a href="http://www.rafaelcapucho.com">Rafael Capucho</a><br /><br />
+
+A partir de agora, será deixada linhas em branco para poder visulizar que o cabeçalho e o rodapé serão inseridos corretamente em todas as páginas
+da impressão.
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+</div>
+
+<div id="_VReportFooter"> Aqui vem o rodapé que vai aparecer ao final de todas as páginas de impressão. </div>
+
+
+<script src="VReport.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-9153202-4");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

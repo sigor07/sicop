@@ -1,0 +1,158 @@
+@charset "utf-8";
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    width: 700px;
+}
+
+.par_min {
+    font-family: Arial, Verdana, Tahoma, sans-serif;
+    font-size: 9px;
+    line-height:15px;
+}
+
+.par_corpo {
+    text-indent: 250px;
+    line-height: 20px;
+    text-align:justify;
+}
+
+.itens_sedex {
+    font-size: 10px;
+    text-align:justify;
+}
+
+.par_pessoas {
+    line-height: 20px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.par_data {
+    line-height: 20px;
+    text-align:right;
+}
+
+.par_ass {
+    line-height: 20px;
+    text-align:center;
+}
+
+.par_ass_func {
+    line-height: 20px;
+    text-align:left;
+}
+
+.par_forte_i {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    font-style: italic;
+}
+
+.par_fim {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 0px;
+    font-weight:bold;
+    font-style: italic;
+}
+
+.par_forte_n {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight:bold;
+}
+
+div.corpo{
+    width: 650px;
+    margin: 0px auto 0;
+    text-align:justify;
+}
+
+div.hRule {
+        height:0;
+        margin:0;
+        padding:0;
+        overflow:hidden;
+        border-top:1px dashed #000;
+}
+div.hRule hr { display:none; }
+
+div.linha {
+    height:0;
+    margin:25px 0px 0px;
+    padding:0;
+    overflow:hidden;
+    border-top:1px solid #000;
+}
+div.linha hr { display:none; }
+
+table#fixa {
+    table-layout: fixed;
+    word-wrap:break-word;
+}
+
+table.bordasimples {
+    border-collapse: collapse;
+}
+
+table.bordasimples tr td {border:1px solid #000;}
+
+table.bordasimples_f {
+    border-collapse: collapse;
+    table-layout: fixed;
+    word-wrap:break-word;
+}
+
+table.bordasimples_f tr td {border:1px solid #000;}
+
+td {
+    vertical-align: middle;
+    padding: 3px 1px;
+}
+
+table.tb_itens_sedex{
+    border-collapse: collapse;
+    margin: 5px auto;
+    table-layout: fixed;
+    word-wrap:break-word;
+    width: 100%;
+}
+
+table.tb_itens_sedex th {
+    padding: 3px 1px;
+}
+
+table.tb_itens_sedex td {
+    vertical-align: top;
+    padding: 3px;
+}
+
+table.tb_itens_sedex tr td {
+    border:1px solid #000;
+    width: 50%;
+}
+
+p.texto_ciente{
+    font-size: 9px;
+    margin: 5px auto 0;
+    width: 640px;
+}
+
+.par_ass_visit {
+    line-height: 20px;
+    text-align:justify;
+}
+
+.par_ass_visit_name {
+    line-height: 20px;
+    text-align:center;
+}
+
+div.block_ass{
+    clear: none;
+    float: left;
+    width: 55%;
+}

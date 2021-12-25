@@ -1,0 +1,18 @@
+/*
+    Document   : estilo_body
+    Created on : 17/04/2011, 10:36:08
+    Author     : Rafael
+    Description: Estilo para o corpo da página
+*/
+
+body, body.index {
+/*    background-color: #F0F0F0;*/
+    background-image: url("/sicop_pics/system/bg.png") ;
+    font: 10px Verdana;
+/*    width: 950px;
+    margin-right: auto; Verdana, Geneva, sans-serif;
+    margin-bottom: auto;
+    margin-left: auto;*/
+}
+
+

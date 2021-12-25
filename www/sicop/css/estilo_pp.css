@@ -1,0 +1,203 @@
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 10px;
+    width: 1000px;
+}
+.paragrafo9 {
+    font-family: Arial, Verdana, Tahoma, sans-serif;
+    font-size: 9px;
+    
+}
+
+.letra9 {
+    font-size: 9px;
+    width:1000px;
+    margin: 0 auto;
+}
+
+.par_min {
+    font-family: Arial, Verdana, Tahoma, sans-serif;
+    font-size: 9px;
+    line-height:10px;
+}
+
+.paragrafo10 {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 10px;
+    line-height: 5px;
+}
+.paragrafo10negrito {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+}
+.paragrafo12 {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+}
+.paragrafo12negrito {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+.paragrafo12Italico {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.paragrafo14 {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+}
+
+.paragrafo14Italico {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.paragrafo16Italico {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.paragrafo18Italico {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 35px;
+}
+
+.paragrafo20Italico {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+}
+
+div#box_p{
+    width: 940px;
+    padding: 5px 2px 5px 2px;
+    margin:0 auto;
+}
+
+div#box_inf{
+    width: 940px;
+    padding: 5px 2px 5px 2px;
+    background: #E6E6E6;
+    text-align: center;
+    margin: 3px auto;
+}
+
+div#irtopo {
+    position:fixed;
+    bottom:0px;
+    right:0px;
+    text-align: right;
+}
+
+div.linha{
+    width: 700px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+}
+
+div#grupo{
+    width: 400px;
+    padding: 5px;
+    margin:0 auto;
+}
+
+div.imagem_d{
+    width: 90px;
+    position: static;
+    float: left;
+    clear: both;
+    margin: 0px 0px 0px 25px;    /*text-align: center;*/
+}
+
+div.paragrafo{
+    width: 550px;
+    text-align: left;
+    line-height: 25px;
+    clear: none;
+    margin: 0px auto 0px 130px;
+    padding: 10px 0px 0px;
+    height: 80px;
+}
+
+div#matricula{
+    width: 120px;
+    height: 12px;
+    float: left;
+    clear: none;
+    vertical-align:middle;
+    padding: 3px 1px;
+}
+
+div#rg{
+    width: 120px;
+    height: 12px;
+    float: left;
+    clear: none;
+    border-left:1px solid #000;
+    vertical-align:middle;
+    padding: 3px 1px;
+}
+
+div#execucao{
+    width: 120px;
+    height: 12px;
+    float: left;
+    clear: none;
+    border-left:1px solid #000;
+    vertical-align:middle;
+    padding: 3px 1px;
+}
+
+div#nacimento{
+    width: 210px;
+    height: 12px;
+    float: left;
+    clear: none;
+    border-left:1px solid #000;
+    vertical-align:middle;
+    padding: 3px 1px;
+}
+
+table.bordasimples {
+    border-collapse: collapse;
+}
+
+table.bordasimples tr td {
+    border:1px solid #000;
+}
+
+table.bordasimples_grade {
+    border-collapse: collapse;
+    table-layout: fixed;
+    word-wrap:break-word;
+}
+
+table.bordasimples_grade tr td {
+    border:1px solid #000;
+}
+
+td.nopading {
+    vertical-align: middle;
+    padding: 0px;
+}
+
+td {
+    vertical-align: middle;
+    padding: 3px 1px;
+}
+
+#cab {
+    height: 90px;
+    width: 800px;
+    margin-top: 5px;
+}

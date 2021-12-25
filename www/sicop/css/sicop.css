@@ -1,0 +1,3668 @@
+/*
+    Document   : sicop
+    Created on : 22/03/2012, 14:12:10
+    Author     : Rafael
+    Description:
+        folha de estilos do sistema
+*/
+
+@media print {
+
+    .no_print{
+        visibility:hidden
+    }
+
+}
+
+
+.CaixaTexto {
+    font: 9px Verdana;
+    background-color: #F8F8F8;
+    padding: 3px;
+    border: 1px solid #E5E5E5;
+}
+
+.CaixaTextoC {
+    font-family: Verdana;
+    font-size: 9px;
+    background-color: #F8F8F8;
+    padding: 3px;
+    border: 1px solid #E5E5E5;
+    text-align: center;
+}
+
+.texto_busca{
+    font-weight: bold;
+}
+
+
+/*
+-------------------------------------------------------------------
+ MENU PRINCIPAL
+-------------------------------------------------------------------
+*/
+div#menu_sup{
+    position:fixed;
+/*    background-image: url("/sicop_pics/system/menu_bg.png") ;*/
+    background-color: #3B5998;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.52);
+    width: 100%;
+    height: 22px;
+    z-index: 999;
+/*    border-bottom: 2px solid #fafafa;*/
+}
+
+/* LINKS */
+a.link_menu_sup:link {
+    color: #D8DFEA;
+    font-weight: bold;
+    text-decoration: none;
+}
+a.link_menu_sup:visited {
+    color: #D8DFEA;
+    font-weight: bold;
+    text-decoration: none;
+}
+a.link_menu_sup:hover {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+
+span#info_sys{
+    color: #D8DFEA;
+    margin-top: 3px;
+    float: left;
+}
+
+span#menu_sys{
+    float: left;
+    height: 20px;
+    margin-top: 1px;
+    margin-left: 3px;
+
+}
+
+span#user_sys{
+    float: right;
+    margin-top: 3px;
+    margin-right: 5px;
+}
+
+img#msg{
+    margin-bottom: -2px;
+}
+
+/*
+-------------------------------------------------------------------
+ /MENU PRINCIPAL
+-------------------------------------------------------------------
+*/
+
+
+/*
+-------------------------------------------------------------------
+ IMAGENS
+-------------------------------------------------------------------
+*/
+img.icon_alert,
+img.icon_button,
+img.icon_popup,
+img.icon_view,
+img.foto_det,
+img.foto_visit,
+img.foto_det_m {
+    vertical-align: middle;
+}
+
+img.icon_alert {
+    height: 32px;
+    vertical-align: middle;
+}
+
+img.icon_button{
+    height: 16px;
+}
+
+img.icon_popup{
+    height: 8px;
+}
+
+img.icon_view{
+    height: 12px;
+}
+
+img.foto_det,
+img.foto_visit {
+    height: 190px;
+    width: 140px;
+}
+
+img.foto_det_m {
+    height: 162px;
+    width: 120px;
+}
+
+/*
+-------------------------------------------------------------------
+ /IMAGENS
+-------------------------------------------------------------------
+*/
+
+
+/**
+ * divs e input para o plugin jquery validator
+ */
+div.cont_validator_error {
+    border: 1px solid red;
+    display: none;
+    margin: 5px auto;
+    padding: 5px;
+    width: 500px;
+}
+div.cont_validator_error li {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+input.validator_error {
+        border: 1px dashed red;
+}
+/**************************************/
+
+p.breadcrumb_output {
+    margin-left: 3px;
+}
+
+p.descript_page {
+/*    background-color: #F0F0F0;*/
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+    margin: 10px;
+}
+
+p.visit_not_in {
+    font-size: 14px;
+    text-align: center;
+    margin: 10px;
+}
+
+p.sub_title_page{
+    font-size: 12px;
+    margin: 20px 10px 10px;
+    text-align: center;
+}
+
+p.p_common,
+p.img_ajax,
+p.p_q_info,
+p.p_q_no_result,
+p.link_det,
+p.q_error {
+    line-height: 25px;
+}
+
+p.form_error{
+    border: 5px #FF0000 solid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p.form_error_ext{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 500px;
+}
+
+/* paragrafo onde fica a imagem loading.gif do ajax */
+p.img_ajax {
+    text-align: center;
+}
+
+/*paragrafo com as info da querys ex: tempo, numero de retornos */
+p.p_q_info {
+    text-align: center;
+}
+
+
+p.p_q_no_result, /*paragrafo para quando a busca não retornar resultados*/
+p.q_error        /*paragrafo para quando a busca falhar*/
+{
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+}
+
+p.p_q_no_result{
+    margin-top: 10px;
+}
+
+td > p.p_q_no_result{
+    margin: 0;
+}
+
+/*paragrafo onde ficam os links na pagina detaldet.php*/
+p.link_det {
+    text-align: center;
+}
+
+/*paragrafo legenda de campo nos formulários*/
+p.form_leg {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/*paragrado de mensagens de alterta nos forms - atenção*/
+p.form_alert {
+    font-size: 12px;
+    font-style: italic;
+    line-height: 15px;
+    text-align: center;
+}
+
+/*paragrafo quando ocorre erro de preenchimento*/
+p.form_error {
+    background-color: red;
+    color: #ffffff;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+p.link_common {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+p.common {
+    margin: 10px 10px 5px;
+    text-align: center;
+}
+
+/*paragrafos que ficam acima das tabelas*/
+p.table_leg {
+    margin: 10px 10px 5px;
+    text-align: center;
+}
+
+p.table_leg_log{
+    margin: 10px auto 5px;
+    text-align: center;
+    width: 900px;
+}
+
+/* paragrafo descritivo dos botões */
+p.bt_leg {
+    font-size: 12px;
+    margin: 5px auto;
+    text-align: center;
+}
+
+p.confirm_ask{
+    font-size: 14px;
+    font-style: italic;
+    margin: 15px 10px 10px;
+    text-align: center;
+}
+
+/*usado no final das páginas para espaçamento com o rodapé do navegador*/
+p.page_end{
+    margin: 80px 0 0;
+}
+
+p.result_dig {
+    font-size: 12px;
+    margin: 10px;
+    text-align: center;
+}
+
+.par_forte_index {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.par_nor_index {
+    font-size: 12px;
+}
+
+/*para os botoes dos forms*/
+input.form_bt{
+    margin: 0px 6px;
+}
+
+
+/* para os botoes da galeria de fotos */
+input.foto_bt {
+    margin: 0 3px;
+}
+
+div.login{
+
+    /*background-color:#ccccff ;*/
+    border:2px solid #cccccc;
+    margin: 0 auto;
+    width: 200px;
+    padding: 15px 10px;
+
+}
+
+/*div para alinhamento de botões*/
+div.form_bts {
+    margin: 10px auto 0;
+    text-align: center;
+/*    border: 1px solid #CCCCCC;*/
+}
+
+/*div para alinhamento de botões da galeria de fotos*/
+div.foto_bts {
+    bottom: -120px;
+    position: relative;
+    text-align: center;
+}
+
+
+/*div para os forms de paginas ajax*/
+div.form_ajax{
+    background-color: #f3f3f3;
+    padding: 5px 10px 10px;
+}
+
+div.album_foto {
+    margin: 10px auto;
+    width: 800px;
+}
+
+div.icon_foto {
+    float: left;
+    height: 220px;
+    margin: 10px 5px;
+    width: 150px;
+}
+
+img.tumb_foto_det,
+img.tumb_foto_visit {
+    position:relative;
+    left:50%;
+    top:50%;
+    margin-left: -70px;
+    margin-top: -110px;
+    width: 140px;
+    height: 190px;
+}
+
+/*
+-------------------------------------------------------------------
+ para as setas que ficam nos cantos das páginas
+-------------------------------------------------------------------
+*/
+
+
+div#irtopo {
+    position:fixed;
+    bottom:28px;
+    right:3px;
+    text-align: right;
+}
+
+div#ir_voltar {
+    position:fixed;
+    bottom:3px;
+    right:3px;
+    text-align: right;
+}
+
+div#irtopo_in,
+div#ir_voltar_in {
+    width:22px;
+    height:22px;
+    background-image: url("/sicop_pics/system/botton_icons.png");
+}
+
+div#irtopo_in {
+    background-position: 22px 22px;
+}
+
+div#irtopo_in:hover {
+    cursor:pointer;
+    background-position: 0px 22px;
+}
+
+div#ir_voltar_in {
+    background-position: 22px 0px;
+}
+
+div#ir_voltar_in:hover {
+    cursor:pointer;
+    background-position: 0px 0px;
+}
+
+/*
+-------------------------------------------------------------------
+ /para as setas que ficam nos cantos das páginas
+-------------------------------------------------------------------
+*/
+
+div.linha, div.linha_alias {
+    width: 744px;
+    padding: 5px;
+    margin: 30px auto 0;
+}
+
+div.linha_pec{
+    margin: 10px auto 0;
+    padding: 5px;
+    width: 744px;
+}
+
+div.linha_perm_rol{
+    width: 744px;
+    padding: 5px;
+    margin: 0px auto 10px;
+}
+
+div.linha_rol{
+    width: 785px;
+    padding: 5px;
+    margin:0 auto;
+}
+
+div.linha_tel {
+    margin: 20px auto 0;
+    padding: 5px;
+    width: 620px;
+}
+
+div#grupo{
+    width: 400px;
+    padding: 5px;
+    margin:0 auto;
+}
+
+div.dados_msg {
+    margin: 0 auto;
+    width: 690px;
+}
+
+div.dados_msg p {
+    margin: 5px 0;
+}
+
+div.dados_msg p.dm_q {
+    margin: 5px 0 15px;
+}
+
+div.detal_var {
+    background-color: #ECE9D8;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 auto 5px;
+    padding: 1px 3px;
+    text-align: center;
+    width: 500px;
+}
+
+div.form_one_field{
+    margin: 0 auto;
+    text-align: center;
+    width: 380px;
+}
+
+div.one_detal{
+    background-color: #FAFAFA;
+    margin: 0 auto;
+    padding: 3px;
+    text-align: justify;
+    width:500px;
+}
+
+ul#menuok {
+    width:300px;
+    /*border:1px solid #003399;
+    background:#FADE8B;*/
+    margin:auto;
+    padding:0;
+    padding-left: 5px;
+    list-style-type:none;
+    }
+ul#menuok li {
+    border-bottom:1px solid #A4A0F5;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+ul#menuok li a:link, ul#menuok li a:visited {
+    display:block;
+    height:1%;
+    text-decoration:none;
+    border-left:10px solid #FAFAFA;
+    padding-left:5px;
+}
+ul#menuok li a:hover {
+    background-color: #CCC;
+    color:#090;
+    border-left:10px solid #666;
+}
+
+ul#menu_besp {
+    width:180px;
+    /*border:1px solid #003399;
+    background:#FADE8B;*/
+    margin:auto;
+    padding:0;
+    padding-left: 5px;
+    list-style-type:none;
+    }
+ul#menu_besp li {
+    border-bottom:1px solid #A4A0F5;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+ul#menu_besp li a:link, ul#menu_besp li a:visited {
+    display:block;
+    height:1%;
+    text-decoration:none;
+    border-left:10px solid #FAFAFA;
+    padding-left:5px;
+}
+ul#menu_besp li a:hover {
+    background-color: #CCC;
+    color:#090;
+    border-left:10px solid #666;
+}
+
+ul#menu_infop {
+    width:200px;
+    margin:auto;
+    padding:0;
+    padding-left: 5px;
+    list-style-type:none;
+}
+
+ul#menu_infop li {
+    border-bottom:1px solid #A4A0F5;
+    padding-bottom: 2px;
+    padding-top: 2px;
+/*    float: left;
+    width: 48%;
+    margin-right:5px;*/
+}
+
+ul#menu_infop li.sub {
+    margin-top: 10px;
+}
+ul#menu_infop li.sub div {
+    display:block;
+    height:1%;
+    text-decoration:none;
+    padding-left: 5px;
+    border-left:10px solid #CCC;
+}
+
+ul#menu_infop li a:link, ul#menu_infop li a:visited {
+    display:block;
+    height:1%;
+    text-decoration:none;
+    border-left:10px solid #FAFAFA;
+    padding-left:5px;
+}
+ul#menu_infop li a:hover {
+    background-color: #CCC;
+    color:#090;
+    border-left:10px solid #666;
+}
+
+
+
+table.login{
+    margin:0 auto;
+    vertical-align:middle;
+}
+
+table.login tr {
+    border:1px solid transparent;
+    background-color: transparent;
+    text-align: left;
+}
+
+table.login td {
+    height:15px;
+    padding: 1px 3px;
+    vertical-align:middle;
+}
+
+table.login td.leg {
+    width:50px;
+}
+
+table.login td.field {
+    width:100px;
+}
+
+th.tb_bt,
+td.tb_bt {
+    width: 30px;
+    text-align: center;
+    vertical-align:middle;
+}
+
+/* PARA DEFINIR A CÉLULA PARA PARA CHECK BOX */
+th.tb_ck,
+td.tb_ck {
+    width:22px;
+    text-align:center;
+    vertical-align:middle;
+}
+
+td.tb_ck_leg {
+    height: 20px;
+    text-align: right;
+    vertical-align: middle;
+}
+
+/*
+-------------------------------------------------------------------
+ TABELA DE DETALHES DO DETENTO
+-------------------------------------------------------------------
+*/
+
+/*
+ * table.detal_det     = tabela de detalhes do detento principal
+ * table.detal_det_min = tabela de detalhes do detento usada nas paginas de cadastramento
+ */
+table.detal_det,
+table.detal_det_min {
+    margin: 0 auto;
+    table-layout: fixed;
+    vertical-align: middle;
+    width: 740px;
+    word-wrap: break-word;
+}
+
+table.detal_det th,
+table.detal_det_min th {
+    text-align:center;
+}
+
+table.detal_det td,
+table.detal_det_min td {
+    background-color: #fafafa;
+    padding: 1px 3px;
+    vertical-align: middle;
+}
+
+table.detal_det td{
+    height: 20px;
+}
+
+table.detal_det_min td{
+    height: 15px;
+}
+
+table.detal_det td.mini,
+table.detal_det td.mini_rc,
+table.detal_det_min td.mini,
+table.detal_det_min td.mini_rc{
+    width: 180px;
+}
+
+table.detal_det td.mini_rc,
+table.detal_det_min td.mini_rc {
+    font-weight: bold;
+    text-align: center;
+}
+table.detal_det td.mini_rc {
+    font-size: 12px;
+}
+
+table.detal_det_min td.mini_rc {
+    font-size: 10px;
+}
+
+table.detal_det td.mid,
+table.detal_det td.mid_destaque,
+table.detal_det_min td.mid,
+table.detal_det_min td.mid_destaque {
+    width: 360px;
+}
+
+table.detal_det td.mid_destaque {
+    font-weight: bold;
+    text-align: center;
+}
+
+table.detal_det td.great,
+table.detal_det td.great_links,
+table.detal_det_min td.great {
+    width: 740px;
+}
+
+table.detal_det td.great_links {
+    text-align: center;
+}
+
+table.detal_det td.quebra_table,
+table.detal_det_min td.quebra_table {
+    background-color: transparent;
+    font-weight: bold;
+    text-align: center;
+    width: 720px;
+}
+
+table.detal_det_min td.quebra_table {
+    height: 20px;
+}
+/*
+-------------------------------------------------------------------
+ /TABELA DE DETALHES DO DETENTO
+-------------------------------------------------------------------
+*/
+
+
+/*
+-------------------------------------------------------------------
+ TABELA DE DETALHES DO VISITANTE
+-------------------------------------------------------------------
+*/
+
+table.detal_visit {
+    margin: 0 auto;
+    table-layout: fixed;
+    vertical-align: middle;
+    width: 740px;
+    word-wrap: break-word;
+}
+
+table.detal_visit_min {
+    margin: 0 auto;
+    table-layout: fixed;
+    vertical-align: middle;
+    width: 500px;
+    word-wrap: break-word;
+}
+
+table.detal_visit td,
+table.detal_visit_min td {
+    background-color: #fafafa;
+    height: 20px;
+    padding: 1px 3px;
+    vertical-align: middle;
+}
+
+table.detal_visit td.mini_det,
+table.detal_visit td.mini_det_destaque,
+table.detal_visit td.mid_det {
+    background-color: #ECE9D8;
+}
+
+
+table.detal_det td.mini,
+table.detal_visit td.mini_det,
+table.detal_visit td.mini_det_destaque {
+    width: 180px;
+}
+
+table.detal_visit td.mini_det_destaque {
+    font-weight: bold;
+    text-align: center;
+}
+
+table.detal_visit td.mid,
+table.detal_visit td.mid_destaque,
+table.detal_visit td.mid_user,
+table.detal_visit td.mid_det {
+    width: 360px;
+}
+
+table.detal_visit td.mid_destaque,
+table.detal_visit td.mid_user {
+    text-align: center;
+}
+
+table.detal_visit td.mid_destaque {
+    font-weight: bold;
+}
+
+table.detal_visit td.great,
+table.detal_visit td.great_destaque,
+table.detal_visit td.great_mot {
+    width: 740px;
+}
+
+table.detal_visit td.great_mot {
+    text-align: left;
+}
+
+table.detal_visit td.great,
+table.detal_visit td.great_destaque {
+    text-align: center;
+}
+
+table.detal_visit td.great_destaque {
+    font-weight: bold;
+}
+
+table.detal_visit_min {
+    margin: 0 auto;
+    table-layout: fixed;
+    vertical-align: middle;
+    width: 500px;
+    word-wrap: break-word;
+}
+
+table.detal_visit_min td.leg_min {
+    width: 110px;
+}
+
+table.detal_visit_min td.field_min {
+    width: 380px;
+}
+/*
+-------------------------------------------------------------------
+ /TABELA DE DETALHES DO VISITANTE
+-------------------------------------------------------------------
+*/
+
+
+/*
+-------------------------------------------------------------------
+ TABELA DETALHES DO PROTOCOLO
+-------------------------------------------------------------------
+*/
+table.detal_prot {
+    margin: 0 auto;
+    table-layout: fixed;
+    vertical-align: middle;
+    width: 740px;
+    word-wrap: break-word;
+}
+
+table.detal_prot td {
+    background-color: #fafafa;
+    height: 20px;
+    padding: 1px 3px;
+    vertical-align: middle;
+
+}
+
+table.detal_prot td.prot_p {
+    width: 33.3%;
+}
+
+table.detal_prot td.prot_m,
+table.detal_prot td.prot_m_user_l,
+table.detal_prot td.prot_m_user_f {
+    width: 50%;
+}
+
+table.detal_prot td.prot_m_user_l,
+table.detal_prot td.prot_m_user_f {
+    text-align: center;
+}
+
+table.detal_prot td.prot_m_user_l {
+    font-weight: bold;
+}
+
+
+table.detal_prot td.prot_g,
+table.detal_prot td.prot_g_cancel {
+    width: 100%;
+}
+
+table.detal_prot td.prot_g_cancel {
+    color: #FF0000;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*
+-------------------------------------------------------------------
+ /TABELA DETALHES DO PROTOCOLO
+-------------------------------------------------------------------
+*/
+
+/*
+-------------------------------------------------------------------
+ TABELA DETALHES DO SEDEX
+-------------------------------------------------------------------
+*/
+table.detal_sedex {
+    margin: 0 auto;
+    table-layout: fixed;
+    vertical-align: middle;
+    width: 740px;
+    word-wrap: break-word;
+}
+
+table.detal_sedex td {
+    background-color: #fafafa;
+    height: 20px;
+    padding: 1px 3px;
+    vertical-align: middle;
+
+}
+
+table.detal_sedex td.sedex_p {
+    width: 33.3%;
+}
+
+table.detal_sedex td.sedex_m,
+table.detal_sedex td.sedex_m_user_l,
+table.detal_sedex td.sedex_m_user_f {
+    width: 50%;
+}
+
+table.detal_sedex td.sedex_m_user_l,
+table.detal_sedex td.sedex_m_user_f {
+    text-align: center;
+}
+
+table.detal_sedex td.sedex_m_user_l {
+    font-weight: bold;
+}
+
+
+table.detal_sedex td.sedex_g {
+    width: 100%;
+}
+
+/*
+-------------------------------------------------------------------
+ /TABELA DETALHES DO SEDEX
+-------------------------------------------------------------------
+*/
+
+/*
+-------------------------------------------------------------------
+ TABELA DETALHES DO PDA
+-------------------------------------------------------------------
+*/
+table.detal_pda {
+    margin: 0 auto;
+    table-layout: fixed;
+    vertical-align: middle;
+    width: 740px;
+    word-wrap: break-word;
+}
+
+table.detal_pda td {
+    background-color: #fafafa;
+    height: 20px;
+    padding: 1px 3px;
+    vertical-align: middle;
+
+}
+
+table.detal_pda td.pda_p {
+    width: 33.3%;
+}
+
+table.detal_pda td.pda_m,
+table.detal_pda td.pda_m_user_l,
+table.detal_pda td.pda_m_user_f {
+    width: 50%;
+}
+
+table.detal_pda td.pda_m_user_l,
+table.detal_pda td.pda_m_user_f {
+    text-align: center;
+}
+
+table.detal_pda td.pda_m_user_l {
+    font-weight: bold;
+}
+
+table.detal_pda td.pda_g {
+    width: 100%;
+}
+
+/*
+-------------------------------------------------------------------
+*/
+
+
+/*
+-------------------------------------------------------------------
+ TABELA DO MAPA POPULACIONAL
+-------------------------------------------------------------------
+*/
+
+table.contagem{
+    margin: 20px auto 0;
+    background-color:#FAFAFA;
+    border-collapse: collapse;
+}
+
+table.contagem tr {
+    border:1px solid #CCC;
+}
+
+table.contagem td {
+    border:1px solid #CCC;
+    padding: 1px 3px;
+    vertical-align:middle;
+}
+
+table.contagem td.soma_pop_mid,
+table.contagem td.soma_pop_grt {
+    height: 20px;
+    text-align: center;
+}
+
+table.contagem td.soma_pop_mid {
+    width: 260px;
+}
+
+table.contagem td.soma_pop_grt {
+    width: 800px;
+}
+
+table.contagem td.cont_raio_dest_geral,
+table.contagem td.cont_raio_link,
+table.contagem td.cont_raio_link_grt,
+table.contagem td.cont_raio_total {
+    height: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+table.contagem td.cont_raio_dest_geral {
+    font-size: 12px;
+}
+
+table.contagem td.cont_raio_link,
+table.contagem td.cont_raio_total,
+table.contagem td.cont_raio {
+    width: 100px;
+}
+
+table.contagem td.cont_raio,
+table.contagem td.cont_raio_grt {
+    text-align: center;
+}
+
+/*
+-------------------------------------------------------------------
+ /TABELA DO MAPA POPULACIONAL
+-------------------------------------------------------------------
+*/
+
+
+/*
+-------------------------------------------------------------------
+ TABELAS DAS MENSAGENS
+-------------------------------------------------------------------
+*/
+
+table.user_msg,
+table.detal_msg {
+    margin: 0 auto;
+    vertical-align: middle;
+
+}
+
+table.user_msg{
+    table-layout: fixed;
+    width: 500px;
+    word-wrap: break-word;
+}
+
+table.detal_msg {
+    width: 700px;
+}
+
+table.user_msg td{
+    background-color: #fafafa;
+    height: 20px;
+    padding: 1px 3px;
+    vertical-align: middle;
+}
+
+table.detal_msg td.msg_corpo {
+    background-color: #fafafa;
+    min-height: 20px;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+/*
+-------------------------------------------------------------------
+ /TABELAS DAS MENSAGENS
+-------------------------------------------------------------------
+*/
+
+
+/*
+-------------------------------------------------------------------
+ TABELAS DE USUÁRIOS
+-------------------------------------------------------------------
+*/
+
+table.detal_user,
+table.detal_user_perm {
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+table.detal_user {
+    table-layout: fixed;
+    width: 500px;
+    word-wrap: break-word;
+}
+
+table.detal_user td,
+table.detal_user_perm td {
+    height: 20px;
+    padding: 1px 3px;
+    vertical-align: middle;
+}
+
+table.detal_user td.detal_user_leg{
+    width: 120px;
+}
+
+table.detal_user td.detal_user_field{
+    width: 350px;
+}
+
+table.detal_user th.detal_user_setor,
+table.detal_user td.detal_user_setor,
+table.detal_user_perm th.detal_user_setor,
+table.detal_user_perm td.detal_user_setor {
+    width: 180px;
+}
+
+table.detal_user td.detal_user_setor {
+    text-align: left;
+}
+
+table.detal_user_perm th.detal_user_nivel,
+table.detal_user_perm td.detal_user_nivel {
+    width: 200px;
+}
+
+table.detal_user_perm td.detal_user_nivel {
+    text-align: left;
+}
+
+/*
+-------------------------------------------------------------------
+ /TABELAS DE USUÁRIOS
+-------------------------------------------------------------------
+*/
+
+/*
+-------------------------------------------------------------------
+ TABELA DETALHES DA UNIDADE
+-------------------------------------------------------------------
+*/
+table.detal_up {
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+table.detal_up td {
+    height: 20px;
+    padding: 1px 3px;
+    vertical-align: middle;
+
+}
+
+td.dup_legend{
+    width: 120px;
+}
+
+td.dup_field {
+    width: 300px;
+}
+
+/*
+-------------------------------------------------------------------
+*/
+
+table.cont_mov{
+    margin: 0 auto;
+    background-color:#FAFAFA;
+    border-collapse: collapse;
+}
+
+table.cont_mov tr {
+    border:1px solid #CCC;
+}
+
+table.cont_mov th,
+table.cont_mov td {
+    border: 1px solid #CCC;
+    height: 20px;
+    padding: 1px 3px;
+    vertical-align:middle;
+}
+
+table.cont_mov th {
+    text-align: center;
+}
+
+table.cont_mov td.cont_desc {
+    text-align: left;
+    width: 150px;
+}
+
+table.cont_mov td.cont_result {
+    text-align: center;
+    width: 90px;
+}
+
+table td.desc_user {
+    /*
+    NÃO UTILIZAR transparent
+    NÃO FUNCIONA NO IE8 E IE9 SE O
+    MODO DE COMPATIBILIDADE NÃO
+    ESTIVER ACIONADO
+    background-color: transparent;*/
+/*    background-color: #F0F0F0;*/
+    height: 15px !important;
+    text-align: right;
+    vertical-align: top !important;
+    font-family: Arial, Verdana, Tahoma, sans-serif;
+    font-size: 9px;
+}
+
+
+
+
+
+/* LINKS */
+a:link {
+    color: #009;
+    text-decoration: none;
+    -webkit-transition: color 500ms ease-out;
+    -webkit-transition-property: color;
+    -webkit-transition-duration: 200ms;
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-delay: initial;
+}
+a:visited {
+    color: #009;
+    text-decoration: none;
+}
+a:hover {
+    color: #090;
+    text-decoration: underline;
+
+}
+
+
+
+/**
+ * estilos para o multiupload
+ */
+
+#uploader_files {
+	font-family:"Lucida Sans Unicode","Lucida Sans","Trebuchet MS";
+	border:1px dotted #DDD;
+	background-color:#FAFAFA;
+	padding: 5px;
+}
+
+.c30p { width:30%; float:left; }
+.c100 { width:100px; float:left; }
+.bold { font-weight:700; }
+.ac { text-align:center; }
+.sep { background-color:#DDD; height:1px; line-height:1px; font-size:1px; clear:both; margin:1px; }
+
+.progress div {
+	background-color:#007700;
+	border-top:3px solid #fff;
+	border-bottom:3px solid #fff;
+	height:12px;
+	width:0%;
+	font-size:10px;
+	font-weight:700;
+	color:#fff;
+	text-align:center;
+}
+
+pre {
+	float:none;
+	font-weight:normal;
+	width:auto;
+	-moz-background-clip:border !important;
+	-moz-background-inline-policy:continuous !important;
+	-moz-background-origin:padding !important;
+	-moz-border-radius-bottomleft:3px;
+	-moz-border-radius-bottomright:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-topright:3px;
+	background:#F5F4EE none repeat scroll 0 0 !important;
+	border:1px dotted #DDDDDD !important;
+	color:#06263C !important;
+	font-size:11px !important;
+	line-height:1.6 !important;
+	margin:0.8em 0 1.2em !important;
+	padding:5px !important;
+}
+
+/**
+ * /estilos para o multiupload
+ */
+
+
+
+
+ /*
+  * estilos para tabelas com divs
+  **/
+
+ div.grid_div,
+ div.row_div,
+ div.cell_div{
+     display: block;
+ }
+
+/* configs da tabela */
+ div.grid_div {
+     margin: 0 auto;
+     position:relative;
+     width: 704px;
+ }
+
+ .grid_div_shadow{
+     color: #999;
+     background-image: url("/sicop_pics/system/loading.gif");
+     background-position: center center;
+     z-index: -999;
+     background-repeat: no-repeat;
+
+ }
+
+/* configs da linha principal */
+ div.row_div {
+     background-color: #FAFAFA;
+     display: block;
+     min-height: 45px;
+     margin-bottom: 5px;
+     position: relative;
+ }
+
+/* efeito ao passar o mouse */
+div.row_div:hover {
+    background-color: #CCCCCC !important;
+ }
+
+/* configs da célula */
+ div.cell_div{
+/*     border: 1px solid #000;*/
+     height: 15px;
+     line-height: 15px;
+     margin: 0 auto;
+     position:absolute;
+     vertical-align: middle;
+ }
+
+/* config para o número da linha */
+ div.row_num {
+     background-color: #FAFAFA;
+     height: 35px;
+     left: 5px;
+     top: 5px;
+     position: absolute;
+     width: 30px;
+ }
+
+/* config para o número da linha */
+ span.row_index {
+     display: block;
+     width: 30px;
+     line-height: 35px;
+     text-align: center;
+     vertical-align: middle;
+ }
+
+ span.grid_div_legend {
+     font-weight: bold;
+ }
+
+/* configs para a 1ª linha */
+ .cell_line_1{
+     top: 5px;    /* posição */
+ }
+
+/* configs para a 2ª linha */
+ .cell_line_2{
+     top: 25px;    /* posição */
+ }
+
+/* 1ª linha */
+ div.hist_visit_date_in{
+     left: 40px;    /* posição */
+     width: 180px;  /* comprimento */
+ }
+
+ div.hist_visit_user_in{
+     left: 225px;   /* posição */
+     width: 80px;   /* comprimento */
+ }
+
+ div.hist_visit_seq{
+     left: 310px;
+     width: 100px;  /* comprimento */
+ }
+
+ div.hist_visit_jumbo{
+     left: 415px;   /* posição */
+     width: 90px;  /* comprimento */
+ }
+
+ div.hist_visit_date_out{
+     left: 510px;   /* posição */
+     width: 100px;  /* comprimento */
+ }
+
+ div.hist_visit_user_out{
+     left: 615px;   /* posição */
+     width: 80px;   /* comprimento */
+ }
+
+/* 2ª linha */
+ div.hist_visit_det_nome{
+     left: 40px;    /* posição */
+     width: 370px;  /* comprimento */
+ }
+
+ div.hist_visit_det_mat{
+     left: 415px;   /* posição */
+     width: 150px;  /* comprimento */
+ }
+/*
+ * /estilos para tabelas com divs
+ **/
+
+
+
+
+
+
+
+/*
+
+          *
+         * *
+        * * *
+       * * * *
+      * * * * *
+          *
+          *
+          *
+          *
+
+    DAQUI PRA CIMA
+    CSS JÁ REVISADO
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*table td {
+    vertical-align: middle;
+    padding: 1px 3px;
+}*/
+
+
+
+.paragrafo9 {
+    font-family: Arial, Verdana, Tahoma, sans-serif;
+    font-size: 9px;
+}
+
+.paragrafo10 {
+
+    font-size: 10px;
+    line-height: 5px;
+}
+
+.paragrafo10negrito {
+
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.paragrafo12 {
+
+    font-size: 12px;
+}
+
+.paragrafo12negrito {
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.paragrafo12Italico {
+    background-color: #F0F0F0;
+
+    font-size: 12px;
+    font-style: italic;
+}
+
+.paragrafo14 {
+    background-color: #F0F0F0;
+
+    font-size: 14px;
+}
+
+.paragrafo14Italico {
+    background-color: #F0F0F0;
+
+    font-size: 14px;
+    font-style: italic;
+}
+
+
+
+/*.par_curto {
+    line-height: 0px;
+}*/
+
+.par_baixo {
+    line-height: 10px;
+}
+
+
+
+a.dcontexto{
+  position:relative;
+  padding:0;
+  color:#039;
+  text-decoration:none;
+  z-index:24;
+}
+a.dcontexto:hover{
+    color: #090;
+    text-decoration: underline;
+    background: transparent;
+    z-index:25;
+}
+
+a.dcontexto span.dc{
+    display: none
+}
+
+a.dcontexto:hover span.dc{
+  display:block;
+  position:absolute;
+  width:230px;
+  top:3em;
+  text-align:justify;
+  text-decoration: none;
+  left:5px;
+  padding:5px 10px;
+  border:1px solid #999;
+  background: #DFDFDF /*e0ffff*/;
+  color:#000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div.block_form{
+    margin: 0 auto;
+    border: 1px solid #CCCCCC;
+    width: 900px;
+
+}
+
+div.form{
+    margin: 0 auto;
+    background-color:#E6E6E6;
+    border: 1px solid #CCCCCC;
+    width: 450px;
+/*    height: 100px;*/
+
+
+}
+
+div.add_atend_name_leg,
+div.add_atend_name_field {
+    height: 22px;
+    margin: 0 auto;
+    padding: 1px;
+}
+
+
+div.add_atend_name_leg{
+    border: 1px solid #CCCCCC;
+    float: left;
+    width: 100px;
+    vertical-align: middle;
+
+}
+
+div.add_atend_name_field{
+    margin-right: 1px;
+    border: 1px solid #CCCCCC;
+    float: left;
+    width: 325px;
+    vertical-align: middle;
+
+}
+
+div.dcontexto{
+  position:relative;
+  padding:0;
+  text-decoration:none;
+  z-index:24;
+}
+
+div.dcontexto:hover{
+    background:transparent;
+    z-index:25;
+}
+
+div.dcontexto span{display: none}
+div.dcontexto:hover span{
+    display:block;
+    position:absolute;
+    width:200px;
+    top:3em;
+    text-align:justify;
+    text-decoration: none;
+    padding:5px 10px;
+    border:1px solid #999;
+    background: #DFDFDF /*e0ffff*/;
+    color:#000;
+    right: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ESTILOS PARA O FORM DO PROTOCOLO */
+
+div.prot_m {
+    width: 358px;
+    margin: 0px auto;
+    float:left;
+    clear:none;
+    padding-top: 2px;
+}
+
+div.prot_med {
+    width: 178px;
+    height: 20px;
+    line-height: 20px;
+    margin: 0px;
+    border-left: 2px solid #CCCCCC;
+    float:left;
+    clear:none;
+    padding: 3px;
+    vertical-align: middle;
+}
+
+
+div.prot_leg_m {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 3px;
+    vertical-align: middle;
+}
+
+div.prot_leg {
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 3px;
+    vertical-align:text-top;
+}
+
+/* FIM DOS ESTILOS PARA O FORM DO PROTOCOLO */
+
+
+
+
+
+/*
+
+ ESTILOS PARA OS DETALHES DO PROTOCOLO
+
+div.prot_pai_d {
+    width: 720px;
+    margin: 0px auto;
+    border: 1px solid #F0F0F0;
+    padding: 0px;
+    background-color:#FAFAFA;
+}
+
+div.prot_d {
+    width: 712px;
+    margin: 0px auto;
+    background-color:#FAFAFA;
+    border: 1px solid #F0F0F0;
+    padding: 5px 3px;
+}
+
+div.prot_m_d {
+    width: 352px;
+    margin: 0px auto;
+    background-color:#FAFAFA;
+    border: 1px solid #F0F0F0;
+    float:left;
+    clear:none;
+    padding: 5px 3px;
+}
+
+div.prot_min_d {
+    width: 232px;
+    margin: 0px auto;
+    background-color:#FAFAFA;
+    border: 1px solid #F0F0F0;
+    padding: 5px 3px;
+    float:left;
+    clear:none;
+}
+
+p.prot_min_d {
+    vertical-align:text-bottom;
+}
+
+ FIM DOS ESTILOS PARA OS DETALHES DO PROTOCOLO */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div#msg_log {
+    padding: 10px 5px;
+}
+
+div.espaco_table {
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+td.espaco_td {
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+
+table.space td{
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+table.bordasimples_space {
+    border-collapse: collapse;
+}
+
+table.bordasimples_space tr {
+    border:1px solid #CCC;
+}
+
+table.bordasimples_space td {
+    border:1px solid #CCC;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+/*CCCCCC*/
+/*FAFAFA*/
+
+table#fixa {
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+table.fixa {
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+table.fixa_space {
+    table-layout: fixed;
+    word-wrap:break-word;
+}
+
+table.fixa_space td {
+    padding: 1px 3px;
+/*    padding-right: 3px;
+    padding-left: 3px;*/
+}
+
+table.fixa_space td.no_space {
+    padding: 0px;
+}
+
+
+
+
+
+
+table tr.add th, .add { /* COR ESCURA */
+    background-color:#FAFAFA;
+}
+
+table tr.marked th, table tr.marked { /* COR QUANDO MARCADA NO CHECK BOX */
+    background-color:#CDCEE0;
+}
+
+.add:hover, .hover { /* COR AO PASSAR MOUSE */
+    background-color:#CCCCCC;
+}
+
+
+table td#ord,
+table td.ord,
+table td.sortedeven,
+table td.sortedodd {
+    padding-right: 2px;
+    padding-left: 2px;
+    border:1px solid #ccccff;
+}
+
+
+
+
+table tr.odd th, .odd { /* COR ESCURA*/
+    background-color: #E9E9E9;
+}
+
+table tr.even th, .even { /* COR CLARA  #FAFAFA #009900;*/
+    background-color: #FAFAFA;
+}
+
+table tr.even_dk th, .even_dk { /* COR MARRON */
+    background-color: #ECE9D8;
+}
+
+table tr.even_gr th, .even_gr { /* COR CINZA */
+    background-color: #E6E6E6;
+}
+
+table tr.marked th, table tr.marked { /* COR QUANDO MARCADA NO CHECK BOX FFCC99*/
+    background-color: #CDCEE0;
+}
+
+.odd:hover, .even:hover, .even_dk:hover, .even_gr:hover, .hover { /* COR AO PASSAR MOUSE */
+    background-color: #CCCCCC;
+}
+
+table tr.odd:hover th, table tr.even:hover th, table tr.even_dk:hover th, table tr.even_gr:hover th, table tr.hover th { /* COR AO PASSAR MOUSE */
+    background-color:#CCCCCC;
+}
+
+
+
+
+
+.desc_erro {
+    font-weight:bold;
+    color:#F00;
+    text-align:center;
+}
+
+.desc_erro_php {
+    font-weight:bold;
+    color:#F00;
+    text-align:center;
+}
+
+.desc_atencao {
+    font-weight:bold;
+    color:#F00;
+}
+
+.destaque_leg {
+    font-weight:bold;
+    color:#F00;
+}
+
+/* ESTILOS PARA AS TABELAS DE USUÁRIOS */
+
+table.user_edit{
+    margin:0 auto;
+    vertical-align:middle;
+    background-color:#E6E6E6;
+    border-collapse: collapse;
+}
+
+table.user_edit tr {
+    border:1px solid #CCC;
+}
+
+table.user_edit td {
+    border:1px solid #CCC;
+    padding-right: 3px;
+    padding-left: 3px;
+    height:20px;
+}
+
+/* FIM DOS ESTILOS PARA AS TABELAS DE USUÁRIOS */
+
+/* ESTILOS PARA O FORM DO BONDE */
+
+table.bonde_add{
+    margin: 10px auto 5px;
+    vertical-align:middle;
+    background-color:#E6E6E6;
+    border-collapse: collapse;
+}
+
+table.bonde_add tr {
+    border:1px solid #CCC;
+}
+
+table.bonde_add td {
+    border: 1px solid #CCC;
+    height: 20px;
+    padding-right: 3px;
+    padding-left: 3px;
+    vertical-align: middle;
+}
+
+table.bonde_add td.data_bonde_leg {
+    width:50px;
+    text-align:right;
+}
+
+table.bonde_add td.data_bonde_field {
+    width:150px;
+    text-align:left;
+}
+
+table.bonde_add td.data_esc_leg {
+    width:70px;
+    text-align:right;
+}
+
+table.bonde_add td.data_esc_field {
+    width:330px;
+    text-align:left;
+}
+
+table.bonde_add td.tb_bt {
+    width:35px;
+    text-align:center;
+}
+
+table.bonde_add td.drop_field {
+    width:250px;
+    text-align:left;
+}
+
+table.bonde_list{
+    margin:0 auto;
+    vertical-align:middle;
+}
+
+table.bonde_list tr.cab {
+    border:1px solid transparent;
+    background-color: transparent;
+    text-align: center;
+}
+
+table.bonde_list tr.ocurr {
+    background-color: #ECE9D8;
+}
+
+table.bonde_list tr.no_ocurr {
+    text-align:center;
+}
+
+/*table.bonde_list td {
+    border:1px solid #CCC;
+    padding-right: 3px;
+    padding-left: 3px;
+    height:15px;
+}*/
+
+table.bonde_list td {
+    /*border:1px solid #CCC;*/
+    height:20px;
+    padding: 1px 3px;
+    vertical-align:middle;
+}
+
+table.bonde_list td.dest_det {
+    text-align:left;
+    width:500px;
+    height: 20px;
+    vertical-align: bottom;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+table.bonde_list td.noh_det {
+    text-align:center;
+    height: 20px;
+    font-weight: bold;
+}
+
+table.bonde_list th.num_od,
+table.bonde_list td.num_od {
+    width:35px;
+}
+
+table.bonde_list th.nome_det,
+table.bonde_list td.nome_det {
+    width:325px;
+}
+
+table.bonde_list th.matr_det,
+table.bonde_list td.matr_det {
+    width:90px;
+}
+
+table.bonde_list th.raio_det,
+table.bonde_list td.raio_det {
+    width:40px;
+}
+
+table.bonde_list th.cela_det,
+table.bonde_list td.cela_det {
+    width:40px;
+}
+
+table.bonde_list th.tb_bt,
+table.bonde_list td.tb_bt {
+    width:35px;
+}
+
+table.bonde_list td.num_od {
+    text-align:center;
+}
+
+table.bonde_list td.nome_det {
+    text-align:left;
+}
+
+table.bonde_list td.matr_det {
+    text-align:center;
+}
+
+table.bonde_list td.raio_det {
+    text-align:center;
+}
+
+table.bonde_list td.cela_det {
+    text-align:center;
+}
+
+table.bonde_list td.tb_bt {
+    text-align:center;
+}
+
+table.bonde_list th.data_bonde,
+table.bonde_list td.data_bonde {
+    width:90px;
+}
+
+table.bonde_list td.data_bonde {
+    text-align: center;
+}
+
+table.bonde_list th.local_bonde,
+table.bonde_list td.local_bonde {
+    width:350px;
+}
+
+table.bonde_list td.local_bonde {
+    text-align:left;
+}
+
+table.bonde_list th.motivo_bonde,
+table.bonde_list td.motivo_bonde {
+    width:100px;
+}
+
+table.bonde_list td.motivo_bonde {
+    text-align:left;
+}
+
+/* FIM DOS ESTILOS PARA O FORM DO BONDE */
+
+
+
+/*
+-------------------------------------------------------------------
+TABELA DE PARA CHECAGEM DE BONDE
+-------------------------------------------------------------------
+*/
+
+table.bonde_check{
+    border-collapse: collapse;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+table.bonde_check th {
+    vertical-align: middle;
+}
+
+table.bonde_check td {
+    border: 1px solid #CCC;
+    height: 20px;
+    padding: 1px 3px;
+    vertical-align: middle;
+
+}
+
+/*
+-------------------------------------------------------------------
+*/
+
+/*
+-------------------------------------------------------------------
+TABELA DE CHECKBOX DA EXPORTAÇÃO DA LISTA
+-------------------------------------------------------------------
+*/
+table.export_ckb{
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+table.export_ckb tr {
+    border:1px solid transparent;
+    text-align: center;
+}
+
+table.export_ckb td {
+    height: 20px;
+    padding: 1px 3px;
+    vertical-align:middle;
+}
+
+/*table.export_ckb td {
+    height: 20px;
+    padding: 1px 3px;
+    vertical-align:middle;
+}*/
+
+table.export_ckb td.legend {
+    text-align: center;
+    width: 180px;
+}
+
+/*
+-------------------------------------------------------------------
+/TABELA DE CHECKBOX DA EXPORTAÇÃO DA LISTA
+-------------------------------------------------------------------
+*/
+
+
+table.lista_log {
+    margin: 0 auto;
+    table-layout: fixed;
+    width: 900px;
+    word-wrap: break-word;
+}
+
+table.lista_log tr.cab {
+    border: 1px solid transparent;
+    background-color: transparent;
+    text-align: center;
+}
+
+table.lista_log td {
+    height: 20px;
+    padding: 1px 3px;
+    vertical-align: middle;
+
+}
+
+table.lista_log th.log_user,
+table.lista_log td.log_user {
+    width: 110px;
+}
+
+table.lista_log td.log_user {
+    text-align: center;
+}
+
+table.lista_log th.log_data,
+table.lista_log td.log_data {
+    width: 100px;
+}
+
+table.lista_log td.log_data {
+    text-align: center;
+}
+
+table.lista_log th.log_msg,
+table.lista_log td.log_msg {
+    width: 570px;
+}
+
+table.lista_log th.log_msg_min,
+table.lista_log td.log_msg_min {
+    width: 360px;
+}
+
+table.lista_log td.log_msg,
+table.lista_log td.log_msg_min {
+    padding: 10px;
+}
+
+table.lista_log th.log_ip,
+table.lista_log td.log_ip {
+    width: 100px;
+}
+
+table.lista_log td.log_ip {
+    text-align: center;
+}
+
+table.lista_log th.log_tipo,
+table.lista_log td.log_tipo {
+    width: 110px;
+}
+
+table.lista_log td.log_tipo {
+    text-align: center;
+}
+
+table.lista_log th.log_tab,
+table.lista_log td.log_tab {
+    width: 90px;
+}
+
+table.lista_log td.log_tab {
+    text-align: center;
+}
+
+/* ESTILOS PARA A TABELA DE BUSCAS */
+
+table.lista_busca{
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+span.fix_table > table.lista_busca {
+    table-layout: fixed;
+    width: 770px;
+    word-wrap: break-word;
+}
+
+table.lista_busca tr.cab {
+    border: 1px solid transparent;
+    background-color: transparent;
+    text-align: center;
+}
+
+/*
+table.lista_busca tr.even, table.lista_busca tr.even_det{
+    background-color:#FAFAFA;
+}
+
+table.lista_busca tr.even_det:hover, table.lista_busca tr.even:hover, table.lista_busca tr.even_det:hover td.nome_det_ord {
+    background-color:#CCCCCC;
+} */
+
+table.lista_busca th {
+    padding: 0px 3px;
+    text-align:center;
+}
+
+table.lista_busca td {
+    height:15px;
+    padding: 1px 3px;
+    vertical-align:middle;
+}
+
+table.lista_busca th.relat_visit {
+    height: 20px;
+    vertical-align:middle;
+    width: 100px;
+}
+
+
+table.lista_busca th.num_od, table.lista_busca td.num_od {
+    width:40px;
+}
+
+table.lista_busca th.num_od_sml, table.lista_busca td.num_od_sml {
+    width:30px;
+}
+
+table.lista_busca th.num_od_alt, table.lista_busca td.num_od_alt {
+    width:40px;
+}
+
+table.lista_busca td.num_od_alt {
+    height: 20px;
+}
+
+table.lista_busca td.num_od,
+table.lista_busca td.num_od_sml,
+table.lista_busca td.num_od_alt {
+    text-align:center;
+}
+
+
+table.lista_busca th.nome_det, table.lista_busca td.nome_det {
+    width:300px;
+}
+
+table.lista_busca th.nome_det_small, table.lista_busca td.nome_det_small {
+    width:250px;
+}
+
+table.lista_busca td.nome_det,
+table.lista_busca td.nome_det_small {
+    text-align:left;
+}
+
+table.lista_busca th.matr_det,
+table.lista_busca td.matr_det {
+    width:95px;
+}
+
+table.lista_busca th.matr_det_large,
+table.lista_busca td.matr_det_large {
+    width:110px;
+}
+
+table.lista_busca td.matr_det,
+table.lista_busca td.matr_det_large {
+    text-align:center;
+}
+
+table.lista_busca th.exec_det,
+table.lista_busca td.exec_det {
+    width:95px;
+}
+
+table.lista_busca td.exec_det {
+    text-align:center;
+}
+
+table.lista_busca th.raio_det, table.lista_busca td.raio_det {
+    width:60px;
+}
+table.lista_busca td.raio_det {
+    text-align:center;
+}
+
+table.lista_busca th.cela_det, table.lista_busca td.cela_det {
+    width:40px;
+}
+
+table.lista_busca td.cela_det {
+    text-align:center;
+}
+
+table.lista_busca th.local_mov, table.lista_busca td.local_mov {
+    width:250px;
+}
+
+table.lista_busca td.local_mov {
+    text-align:left;
+}
+
+table.lista_busca th.data_mov, table.lista_busca td.data_mov  {
+    width:85px;
+}
+
+table.lista_busca td.data_mov {
+    text-align:center;
+}
+
+table.lista_busca tr.even_gsa{
+    background-color:#FAFAFA;
+}
+
+table.lista_busca tr.even_gsa:hover {
+    background-color:#CCCCCC;
+}
+
+table.lista_busca th.cod_gsa, table.lista_busca td.cod_gsa {
+    width:100px;
+}
+
+table.lista_busca td.cod_gsa {
+    text-align:center;
+}
+
+table.lista_busca th.local_gsa, table.lista_busca td.local_gsa {
+    width:250px;
+}
+
+table.lista_busca td.local_gsa {
+    text-align:left;
+}
+
+table.lista_busca th.local_listatel, table.lista_busca td.local_listatel {
+    width:300px;
+}
+
+table.lista_busca td.local_listatel {
+    text-align:left;
+}
+
+table.lista_busca th.num_listatel, table.lista_busca td.num_listatel {
+    width:150px;
+}
+
+table.lista_busca td.num_listatel {
+    text-align:left;
+}
+
+table.lista_busca th.desc_listatel, table.lista_busca td.desc_listatel {
+    width:200px;
+}
+
+table.lista_busca td.desc_listatel {
+    text-align:left;
+}
+
+table.lista_busca th.desc_obs, table.lista_busca td.desc_obs {
+    width:550px;
+}
+
+table.lista_busca td.desc_obs {
+    text-align:justify;
+}
+
+table.lista_busca th.tipo_mov, table.lista_busca td.tipo_mov {
+    width: 190px;
+}
+
+table.lista_busca td.tipo_mov {
+    text-align: left;
+}
+
+table.lista_busca th.local_hist_mov, table.lista_busca td.local_hist_mov {
+    width: 380px;
+}
+
+table.lista_busca td.local_hist_mov {
+    text-align: left;
+}
+
+table.lista_busca th.raio_old,
+table.lista_busca th.raio_new,
+table.lista_busca th.cela_old,
+table.lista_busca th.cela_new,
+table.lista_busca td.raio_old,
+table.lista_busca td.raio_new,
+table.lista_busca td.cela_old,
+table.lista_busca td.cela_new{
+    width: 60px;
+}
+
+table.lista_busca td.raio_old,
+table.lista_busca td.raio_new,
+table.lista_busca td.cela_old,
+table.lista_busca td.cela_new,
+table.lista_busca td.rc_user {
+    height: 20px;
+    text-align: center;
+}
+
+table.lista_busca td.rc_user {
+    padding-right: 10px;
+    text-align: right;
+    width: 70px;
+}
+
+table.lista_busca th.tipo_alias, table.lista_busca td.tipo_alias {
+    width:120px;
+}
+
+table.lista_busca td.tipo_alias {
+    height: 20px;
+    text-align: left;
+}
+
+table.lista_busca th.desc_alias, table.lista_busca td.desc_alias {
+    width: 460px;
+}
+
+table.lista_busca td.desc_alias {
+    height: 20px;
+    text-align: left;
+}
+
+table.lista_busca th.desc_data, table.lista_busca td.desc_data {
+    width:75px;
+}
+
+table.lista_busca th.desc_data_long, table.lista_busca td.desc_data_long {
+    width: 110px;
+}
+
+table.lista_busca td.desc_data,
+table.lista_busca td.desc_data_long {
+/*    height: 20px;*/
+    text-align: center;
+}
+
+table.lista_busca th.visit_id, table.lista_busca td.visit_id {
+    width:50px;
+}
+
+table.lista_busca td.visit_id {
+    height: 20px;
+    text-align: center;
+}
+
+table.lista_busca th.visit_nome, table.lista_busca td.visit_nome {
+    width:285px;
+}
+
+table.lista_busca td.visit_nome {
+    height: 20px;
+    text-align: left;
+}
+
+table.lista_busca th.visit_nome_busca, table.lista_busca td.visit_nome_busca {
+    width:300px;
+}
+
+table.lista_busca td.visit_nome_busca {
+    text-align: left;
+}
+
+table.lista_busca th.visit_rg, table.lista_busca td.visit_rg {
+    width:100px;
+}
+
+table.lista_busca td.visit_rg {
+    text-align: center;
+}
+
+table.lista_busca th.visit_data_nasc, table.lista_busca td.visit_data_nasc {
+    width:145px;
+}
+
+table.lista_busca td.visit_data_nasc {
+    height: 20px;
+    text-align: center;
+}
+
+table.lista_busca th.visit_parent, table.lista_busca td.visit_parent {
+    width:100px;
+}
+
+table.lista_busca td.visit_parent {
+    height: 20px;
+    text-align: center;
+}
+
+table.lista_busca th.visit_sexo, table.lista_busca td.visit_sexo {
+    width:45px;
+}
+
+table.lista_busca td.visit_sexo {
+    height: 20px;
+    text-align: center;
+}
+
+table.lista_busca th.num_pda, table.lista_busca td.num_pda {
+    width:160px;
+}
+
+table.lista_busca td.num_pda {
+    height: 20px;
+    text-align: left;
+}
+
+table.lista_busca th.num_apcc, table.lista_busca td.num_apcc {
+    width:100px;
+}
+
+table.lista_busca td.num_apcc {
+    text-align: center;
+}
+
+table.lista_busca th.data_oc, table.lista_busca td.data_oc {
+    width:135px;
+}
+
+table.lista_busca td.data_oc {
+    height: 20px;
+    text-align: center;
+}
+
+table.lista_busca th.sit_pda, table.lista_busca td.sit_pda {
+    width:120px;
+}
+
+table.lista_busca td.sit_pda {
+    height: 20px;
+    text-align: center;
+}
+
+table.lista_busca th.sit_det_pda, table.lista_busca td.sit_det_pda {
+    width:160px;
+}
+
+table.lista_busca td.sit_det_pda {
+    height: 20px;
+    text-align: center;
+}
+
+table.lista_busca th.data_reab, table.lista_busca td.data_reab {
+    width:130px;
+}
+
+table.lista_busca td.data_reab {
+    height: 20px;
+    text-align: center;
+}
+
+table.lista_busca th.cod_sedex, table.lista_busca td.cod_sedex {
+    width:170px;
+}
+
+table.lista_busca th.cod_sedex_small, table.lista_busca td.cod_sedex_small {
+    width:130px;
+}
+
+table.lista_busca td.cod_sedex,
+table.lista_busca td.cod_sedex_small {
+    text-align: center;
+}
+
+table.lista_busca th.sit_sedex, table.lista_busca td.sit_sedex {
+    width:230px;
+}
+
+table.lista_busca td.sit_sedex {
+    text-align: left;
+}
+
+table.lista_busca th.tipo_pec, table.lista_busca td.tipo_pec {
+    width:100px;
+}
+
+table.lista_busca td.tipo_pec {
+    height: 20px;
+    text-align: left;
+}
+
+table.lista_busca th.desc_pec, table.lista_busca td.desc_pec {
+    width:510px;
+}
+
+table.lista_busca th.desc_pec_inc, table.lista_busca td.desc_pec_inc {
+    width:470px;
+}
+
+table.lista_busca th.desc_pec_sml, table.lista_busca td.desc_pec_sml {
+    width:420px;
+}
+
+table.lista_busca td.desc_pec,
+table.lista_busca td.desc_pec_inc,
+table.lista_busca td.desc_pec_sml,
+table.lista_busca td.pec_obs_rt{
+    height: 20px;
+    text-align: justify;
+}
+
+table.lista_busca th.mov_sedex,
+table.lista_busca td.mov_sedex {
+    width:230px;
+}
+
+table.lista_busca td.mov_sedex {
+    height: 20px;
+    text-align: left;
+}
+
+table.lista_busca th.sdx_item_medida,
+table.lista_busca td.sdx_item_medida {
+    width:80px;
+}
+
+table.lista_busca td.sdx_item_medida {
+    height: 20px;
+    text-align: center;
+}
+
+table.lista_busca th.sdx_item_quant,
+table.lista_busca td.sdx_item_quant {
+    width:80px;
+}
+
+table.lista_busca td.sdx_item_quant {
+    height: 20px;
+    text-align: center;
+}
+
+table.lista_busca th.sdx_item_desc,
+table.lista_busca td.sdx_item_desc {
+    width:300px;
+}
+
+table.lista_busca td.sdx_item_desc {
+    height: 20px;
+    text-align: left;
+}
+
+table.lista_busca th.sdx_item_ret,
+table.lista_busca td.sdx_item_ret {
+    width: 80px;
+}
+
+table.lista_busca td.sdx_item_ret {
+    height: 20px;
+    text-align: center;
+}
+
+
+th.descr_pec,
+td.descr_pec {
+    width:250px;
+}
+
+th.user_pec,
+td.user_pec {
+    width: 100px;
+}
+
+td.descr_pec,
+td.user_pec {
+    height: 20px;
+}
+
+td.descr_pec {
+    text-align: left;
+}
+
+td.user_pec {
+    text-align: center;
+}
+
+/* para a busca de processo */
+th.bp_inq,
+td.bp_inq {
+    width: 90px;
+}
+
+th.bp_process,
+td.bp_process {
+    width: 100px;
+}
+
+th.bp_vara,
+td.bp_vara {
+    width: 75px;
+}
+
+th.bp_comarca,
+td.bp_comarca {
+    width: 220px;
+}
+
+td.bp_inq,
+td.bp_process {
+    text-align: left;
+}
+
+td.bp_vara,
+td.bp_comarca {
+    text-align: center;
+}
+
+
+/*
+-------------------------------------------------------------------
+ESTILOS DE AUDIÊNCIAS USADAS NA PAGINA BUSCAAUD.PHP
+-------------------------------------------------------------------
+*/
+table.lista_busca th.local_aud, table.lista_busca td.local_aud {
+    width:200px;
+}
+
+table.lista_busca td.local_aud {
+    text-align:left;
+}
+
+table.lista_busca th.cidade_aud, table.lista_busca td.cidade_aud {
+    width:180px;
+}
+
+table.lista_busca td.cidade_aud {
+    text-align:left;
+}
+
+table.lista_busca th.data_aud, table.lista_busca td.data_aud {
+    width:75px;
+}
+
+table.lista_busca td.data_aud {
+    text-align:center;
+}
+
+table.lista_busca th.hora_aud, table.lista_busca td.hora_aud {
+    width:45px;
+}
+
+table.lista_busca td.hora_aud {
+    text-align:center;
+}
+
+/*
+-------------------------------------------------------------------
+ /ESTILOS DE AUDIÊNCIAS USADAS NA PÁGINA BUSCAAUD.PHP
+-------------------------------------------------------------------
+*/
+
+/*
+-------------------------------------------------------------------
+ ESTILOS DE AUDIÊNCIAS USADAS NA PÁGINA DETALHESDET.PHP
+-------------------------------------------------------------------
+*/
+
+table.lista_busca th.local_aud_hist, table.lista_busca td.local_aud_hist {
+    width:250px;
+}
+
+table.lista_busca td.local_aud_hist {
+    height: 20px;
+    text-align:left;
+}
+
+table.lista_busca th.cidade_aud_hist, table.lista_busca td.cidade_aud_hist {
+    width:180px;
+}
+
+table.lista_busca td.cidade_aud_hist {
+    height: 20px;
+    text-align: center;
+}
+
+table.lista_busca th.data_hora_aud, table.lista_busca td.data_hora_aud {
+    width: 140px;
+}
+
+table.lista_busca td.data_hora_aud {
+    height: 20px;
+    text-align: center;
+}
+
+table.lista_busca th.n_process, table.lista_busca td.n_process {
+    width: 150px;
+}
+
+table.lista_busca td.n_process {
+    height: 20px;
+    text-align:center;
+}
+
+/*
+-------------------------------------------------------------------
+ /ESTILOS DE AUDIÊNCIAS USADAS NA PÁGINA DETALHESDET.PHP
+-------------------------------------------------------------------
+*/
+
+
+
+/*
+-------------------------------------------------------------------
+ TABELA EM BUSCANUM*.PHP
+-------------------------------------------------------------------
+*/
+
+table.lista_busca th.n_ano, table.lista_busca td.n_ano {
+    width: 90px;
+}
+
+table.lista_busca td.n_ano {
+    height: 20px;
+    text-align:center;
+}
+
+table.lista_busca th.user_log, table.lista_busca td.user_log {
+    width: 115px;
+}
+
+table.lista_busca td.user_log {
+    height: 20px;
+    text-align:center;
+}
+
+table.lista_busca th.setor_num, table.lista_busca td.setor_num {
+    width: 100px;
+}
+
+table.lista_busca td.setor_num {
+    height: 20px;
+    text-align:center;
+}
+
+table.lista_busca th.desc_num, table.lista_busca td.desc_num {
+    width: 470px;
+}
+
+table.lista_busca td.desc_num {
+    height: 20px;
+}
+
+/*
+-------------------------------------------------------------------
+ /TABELA EM BUSCANUM*.PHP
+-------------------------------------------------------------------
+*/
+
+/*
+-------------------------------------------------------------------
+ TABELA DO PROTOCOLO
+-------------------------------------------------------------------
+*/
+
+table.lista_busca th.n_prot, table.lista_busca td.n_prot {
+    width: 100px;
+}
+
+table.lista_busca td.n_prot {
+    height: 20px;
+    text-align: center;
+}
+
+table.lista_busca th.mod_ent, table.lista_busca td.mod_ent {
+    width: 80px;
+}
+
+table.lista_busca td.mod_ent {
+    height: 20px;
+    text-align: center;
+}
+
+table.lista_busca th.tipo_doc, table.lista_busca td.tipo_doc {
+    width: 110px;
+}
+
+table.lista_busca td.tipo_doc {
+    height: 20px;
+    text-align: center;
+}
+
+table.lista_busca th.prot_asunt, table.lista_busca td.prot_asunt {
+    width: 210px;
+}
+
+table.lista_busca td.prot_asunt {
+    height: 20px;
+}
+
+table.lista_busca th.prot_origem, table.lista_busca td.prot_origem {
+    width: 100px;
+}
+
+table.lista_busca td.prot_origem {
+    height: 20px;
+    text-align: center;
+}
+
+table.lista_busca th.prot_dest, table.lista_busca td.prot_dest {
+    width: 100px;
+}
+
+table.lista_busca td.prot_dest {
+    height: 20px;
+    text-align: center;
+}
+
+/*
+-------------------------------------------------------------------
+ /TABELA DO PROTOCOLO
+-------------------------------------------------------------------
+*/
+
+
+table.lista_busca th.susp_visit_periodo, table.lista_busca td.susp_visit_periodo {
+    width: 75px;
+}
+
+table.lista_busca td.susp_visit_periodo {
+    height: 20px;
+    text-align: center;
+}
+
+table.lista_busca th.susp_visit_mot, table.lista_busca td.susp_visit_mot {
+    width: 320px;
+}
+
+table.lista_busca td.susp_visit_mot {
+    height: 20px;
+    text-align: justify;
+}
+
+table.lista_busca th.susp_visit_tipo, table.lista_busca td.susp_visit_tipo {
+    text-align: center;
+    width: 80px;
+}
+
+table.lista_busca th.hist_visit, table.lista_busca td.hist_visit {
+    text-align: center;
+    width: 80px;
+}
+
+table.lista_busca th.msg_user,
+table.lista_busca td.msg_user {
+    width: 120px;
+}
+
+table.lista_busca td.msg_user {
+    height: 20px;
+    text-align: center;
+}
+
+table.lista_busca th.msg_ass,
+table.lista_busca td.msg_ass {
+    width: 400px;
+}
+
+table.lista_busca td.msg_ass {
+    height: 20px;
+    text-align: justify;
+}
+
+table.lista_busca th.desc_pda,
+table.lista_busca td.desc_pda {
+    width: 170px;
+}
+
+table.lista_busca td.desc_pda {
+    text-align: right;
+}
+
+/* tabela de usuários on line */
+table.lista_busca th.uo_user,
+table.lista_busca td.uo_user {
+    width: 110px;
+}
+
+table.lista_busca td.uo_user {
+    text-align: left;
+}
+
+table.lista_busca th.uo_view,
+table.lista_busca td.uo_view {
+    width: 380px;
+}
+
+table.lista_busca td.uo_view {
+    text-align: left;
+}
+
+table.lista_busca th.uo_ip,
+table.lista_busca td.uo_ip {
+    width: 100px;
+}
+
+table.lista_busca td.uo_ip {
+    text-align: center;
+}
+
+
+/* FIM DOS ESTILOS PARA A TABELA DE BUSCA */
+
+
+/* ESTILOS PARA A TABELA DE DETALHES DO USUÁRIO */
+
+table.lista_user{
+    margin:0 auto;
+    vertical-align:middle;
+}
+
+table.lista_user th {
+    text-align:center;
+}
+
+table.lista_user td {
+    padding: 1px 3px;
+    height:20px;
+}
+
+table.lista_user th.setor, table.lista_user td.setor {
+    width: 200px;
+}
+
+table.lista_user td.setor {
+    text-align: left;
+}
+
+table.lista_user th.nivel, table.lista_user td.nivel {
+    width: 200px;
+}
+
+table.lista_user td.nivel {
+    text-align: left;
+}
+
+/* FIM DOS ESTILOS PARA A TABELA DE DETALHES DO USUÁRIO */
+
+
+
+/* ESTILOS PARA A TABELA DE DETALHES DA LOCALIDADE */
+
+table.detal_lt{
+    margin:0 auto;
+    vertical-align:middle;
+}
+
+table.detal_lt tr {
+    background-color: #FAFAFA;
+}
+
+table.detal_lt td {
+    padding-right: 3px;
+    padding-left: 3px;
+    height:20px;
+    vertical-align:middle;
+}
+
+table.detal_lt td.local_lt_maior {
+    width:600px;
+    text-align:left;
+}
+
+table.detal_lt td.local_lt_med {
+    width:400px;
+    text-align: center;
+}
+
+table.detal_lt td.local_lt_menor,
+table.detal_lt td.user_cab,
+table.detal_lt td.user_fild {
+    width:300px;
+}
+
+table.detal_lt td.local_lt_menor {
+    text-align:left;
+}
+
+table.detal_lt td.user_cab {
+    text-align:center;
+    font-weight: bold;
+}
+
+table.detal_lt td.user_fild {
+    text-align:center;
+}
+
+/* FIM DOS ESTILOS PARA A TABELA DE DETALHES DA LOCALIDADE */
+
+
+
+/* ESTILOS PARA A TABELA DA GRADE */
+
+table.detal_grade{
+    margin:0 auto;
+    vertical-align:middle;
+}
+
+table.detal_grade td {
+    padding-right: 3px;
+    padding-left: 3px;
+    height:15px;
+}
+
+table.detal_grade td.grade_med,
+table.detal_grade td.grade_min {
+    width:255px;
+    text-align:left;
+}
+
+table.detal_grade td.grade_med {
+    background-color: #FAFAFA;
+}
+table.detal_grade td.grade_dual {
+    background-color: #FAFAFA;
+    width:510px;
+    text-align:left;
+}
+
+table.detal_grade td.grade_maior {
+    background-color: #FAFAFA;
+    width:765px;
+    text-align:left;
+}
+
+
+/* FIM DOS ESTILOS PARA A TABELA DA GRADE */
+
+
+
+/* ESTILOS PARA A TABELA DE EDIÇÃO */
+
+table.edit{
+    margin: 10px auto 0;
+    vertical-align:middle;
+    background-color:#E6E6E6;
+    border-collapse: collapse;
+}
+
+table.edit tr {
+    border:2px solid #CCC;
+}
+
+table.edit td {
+    border: 2px solid #CCC;
+    padding: 1px 3px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+table.edit th.alt_dir {
+    border:2px solid #CCC;
+    padding-right: 3px;
+    padding-left: 3px;
+    height:20px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+}
+
+table.edit td.table_form_label {
+    width: 80px;
+}
+
+table.edit td.tbe_legend {
+    text-align: left;
+    width: 80px;
+}
+
+table.edit td.tbe_legend_grd {
+    text-align: left;
+    width: 120px;
+}
+
+table.edit td.tbe_field {
+    text-align: left;
+    width: 320px;
+}
+
+table.edit td.tbe_field_small {
+    text-align: left;
+    width: 230px;
+}
+
+table.edit td.lista_tel_leg {
+    width:100px;
+}
+
+table.edit td.lista_tel_field {
+    width:430px;
+}
+
+table.edit td.lista_tel_num_field {
+    width:230px;
+}
+
+table.edit td.detproc_med {
+    width:400px;
+}
+
+table.edit td.detproc_grand {
+    width:800px;
+    text-align: center;
+}
+
+table.edit td.add_local_esc_leg {
+    width: 80px;
+    text-align: right;
+}
+
+table.edit td.add_local_esc_field {
+    width: 330px;
+    text-align: left;
+}
+
+table.edit td.form_add_atendente_field {
+    width: 350px;
+}
+
+
+table.edit td.prot_td_med {
+    width: 220px;
+}
+
+/* tabela de cadastramento/alteração de processo */
+td.cp_min{
+    width: 255px;
+}
+
+td.cp_med{
+    width: 510px;
+}
+
+td.cp_grd{
+    width: 765px;
+}
+
+
+
+/* FIM DOS ESTILOS PARA A TABELA DE EDIÇÃO */
+
+/*
+-------------------------------------------------------------------
+ ESTILOS PARA AS TABELAS DOS PARAMETROS DE PESQUISAS
+-------------------------------------------------------------------
+*/
+
+table.busca_form {
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+table.busca_form td {
+/*    background-color: #fafafa;*/
+    height: 20px;
+    padding: 1px 3px;
+    vertical-align: middle;
+}
+
+table.busca_form td.bf_det_legend,
+table.busca_form td.bf_legend {
+    text-align: right;
+    max-width: 120px;
+}
+
+table.busca_form td.bf_det_field,
+table.busca_form td.bf_field {
+    text-align: left;
+    max-width: 320px;
+}
+
+table.busca_form td.bf_detm {
+    text-align: center;
+}
+
+table.busca_form td.bf_det_field_w {
+    text-align: left;
+    width: 320px;
+}
+
+table.busca_form td.bf_lista_tel {
+    text-align: center;
+    width: 300px;
+}
+
+
+
+/*
+-------------------------------------------------------------------
+ /ESTILOS PARA AS TABELAS DOS PARAMETROS DE PESQUISAS
+-------------------------------------------------------------------
+*/
+
+
+
+table.lista_visit{
+    margin:0 auto;
+    vertical-align:middle;
+}
+
+table.lista_visit tr.cab {
+    border:1px solid transparent;
+    background-color: transparent;
+    text-align: center;
+}
+
+table.lista_visit th {
+    text-align:center;
+}
+
+table.lista_visit td {
+    padding-right: 3px;
+    padding-left: 3px;
+    height:15px;
+}
+
+table.lista_visit th.nome_visit, table.lista_visit td.nome_visit {
+    width:270px;
+}
+
+table.lista_visit td.nome_visit {
+    text-align: left;
+}
+
+table.lista_visit th.rg_visit, table.lista_visit td.rg_visit {
+    width:90px;
+}
+
+table.lista_visit td.rg_visit {
+    text-align: center;
+}
+
+table.lista_visit th.dt_nasc_visit, table.lista_visit td.dt_nasc_visit {
+    width:90px;
+}
+
+table.lista_visit td.dt_nasc_visit {
+    text-align: center;
+}
+
+table.lista_visit th.parent_visit, table.lista_visit td.parent_visit {
+    width: 110px;
+}
+
+table.lista_visit td.parent_visit {
+    text-align: center;
+}
+
+table.lista_visit th.sexo_visit, table.lista_visit td.sexo_visit {
+    width: 45px;
+}
+
+table.lista_visit td.sexo_visit {
+    text-align: center;
+}
+
+
+.highlight {
+    background-color: #F0F0F0 /*#F8F8F8; #3D3D3D*/;
+    font-weight: bold;
+}
+
+table thead tr th.header {
+    background-image: url("/sicop_pics/system/bg.gif");
+    background-repeat: no-repeat;
+    background-position: right center;
+    cursor: pointer;
+}
+
+table thead tr th.headerSortUp {
+    background-image: url("/sicop_pics/system/asc.gif");
+}
+
+table thead tr th.headerSortDown {
+    background-image: url("/sicop_pics/system/desc.gif");
+}
+
+.oculta{
+    display: none;
+}
+
+.det_achegar{
+    color: #990000;
+}
+
+.det_nacasa{
+    color: #000000;
+}
+
+.det_trana{
+    color: #0000FF;
+}
+
+.det_transf{
+    color: #CC9900;
+}
+
+.det_excl{
+    color: #009900;
+}
+
+.det_evadido{
+    color: #0080C0;
+}
+
+.det_falecido{
+    color: #800080;
+}
+
+.det_trada{
+    color: #FF0000;
+}
+
+.det_tranada{
+    color: #FF0000;
+}
+
+.visit_ativa,
+.visit_ativa_destaque {
+    color: #000000;
+}
+
+.visit_susp,
+.visit_susp_destaque {
+    color: #CC9900;
+}
+
+.visit_excl,
+.visit_excl_destaque {
+    color: #FF0000;
+}
+
+.visit_ativa_destaque,
+.visit_susp_destaque,
+.visit_excl_destaque {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.susp_ativa {
+    color: #000000;
+}
+
+.susp_revog {
+    color: #CC9900;
+}
+
+.aud_ativa{
+    color: #000000;
+}
+
+.aud_cancel{
+    color: #CC9900;
+}
+
+.aud_just{
+    color: #FF0000;
+}
+
+.process_ativo{
+    color: #000000;
+}
+
+.process_extinto{
+    color: #CC9900;
+}
+
+.process_preso{
+    color: #FF0000;
+}

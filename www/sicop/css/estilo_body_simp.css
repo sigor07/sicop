@@ -1,0 +1,13 @@
+/* 
+    Document   : estilo_body_simp
+    Created on : 17/04/2011, 10:40:11
+    Author     : Rafael
+    Description: Estilo para o corpo da página sem os limites
+*/
+
+body {
+    background-color: #F0F0F0;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 10px;
+}
+

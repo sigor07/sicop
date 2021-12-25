@@ -1,0 +1,348 @@
+@charset "utf-8";
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 10px;
+    width: 700px;
+}
+
+.par_corpo {
+    text-indent: 250px;
+    line-height: 20px;
+    text-align:justify;
+}
+
+.par_min {
+    font-family: Arial, Verdana, Tahoma, sans-serif;
+    font-size: 9px;
+    line-height:15px;
+}
+
+.par_min_foto {
+    font-family: Arial, Verdana, Tahoma, sans-serif;
+    font-size: 9px;
+    line-height:10px;
+}
+
+.par_data {
+    line-height: 20px;
+    text-align:right;
+}
+
+.par_ass {
+    line-height: 15px;
+}
+
+.par_forte {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.par_med_n {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight:bold;
+}
+
+.par_forte_n {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight:bold;
+}
+
+div.corpo{
+    width: 650px;
+    margin: 0px auto 0;
+    text-align:justify;
+}
+
+div.corpo_cartao{
+    width: 700px;
+    margin: 0px auto 0;
+    text-align:justify;
+}
+
+div.texto_ciente{
+    width: 640px;
+    margin: 5px auto 0;
+}
+
+div.ass_func{
+    width: 300px;
+    float: left;
+    clear: none;
+    margin-top: 10px;
+}
+
+div.ass_det{
+    width: 300px;
+    float: right;
+    clear: none;
+    margin-top: 10px;
+}
+
+div.digital{
+    width: 650px;
+    float: right;
+    clear: none;
+    margin-top: 10px;
+}
+
+div.rodape{
+    width: 650px;
+    float: left;
+    clear: none;
+    margin: 0 auto 0 0px;
+}
+
+div#cutis{
+    width: 100px;
+    height: 15px;
+    float: left;
+    clear: none;
+    vertical-align:middle;
+    padding: 3px;
+}
+
+div#cabelos{
+    width: 212px;
+    height: 15px;
+    float: left;
+    clear: none;
+    border-left:1px solid #000;
+    vertical-align:middle;
+    padding: 3px;
+}
+
+div#olhos{
+    width: 200px;
+    height: 15px;
+    float: left;
+    clear: none;
+    border-left:1px solid #000;
+    vertical-align:middle;
+    padding: 3px;
+}
+
+div#estatura{
+    width: 90px;
+    height: 15px;
+    float: left;
+    clear: none;
+    border-left:1px solid #000;
+    vertical-align:middle;
+    padding: 3px;
+}
+
+div#peso{
+    width: 80px;
+    height: 15px;
+    float: right;
+    clear: none;
+    border-left:1px solid #000;
+    vertical-align:middle;
+    padding: 3px;
+}
+
+div#fuga{
+    width: auto;
+    height: 15px;
+    float: left;
+    clear: none;
+    vertical-align:middle;
+    padding: 3px;
+}
+
+/* FORMATOS PARA O FOTO_DET.PHP */
+div.foto_det{
+    width: 467px;
+    text-align:center;
+    position: static;
+    clear: none;
+    margin: 10px auto 20px;
+}
+
+
+/* FORMATOS PARA O CARTAO DE IDENTIFICAÇÃO */
+div.cartao_det{
+    width: 340px;
+    height: 5.3cm;
+    float: left;
+    clear: none;
+    vertical-align:middle;
+    border:1px solid #000;
+    margin: 0px auto;
+    font-size:9px;
+    line-height:15px;
+}
+
+div.cartao_visit{
+    width: 340px;
+    height: 6.5cm;
+    float: left;
+    clear: none;
+    vertical-align:middle;
+    border:1px solid #000;
+    margin: 0px auto;
+    font-size:9px;
+    line-height:15px;
+}
+
+div.imagem_det{
+    position: static;
+    float: right;
+    clear: none;
+    margin: 10px 5px 0px;
+}
+
+div.imagem_visit_cartao{
+    position: static;
+    float: right;
+    clear: none;
+    margin: 0px 5px;
+}
+
+.par_cartao {
+    text-align:justify;
+    padding-left:5px;
+}
+
+.par_cartao_data_visit {
+    text-align:center;
+}
+
+.par_cartao_rc {
+    line-height: 25px;
+    font-size:12px;
+    text-align:center;
+    padding-top: 10px;
+}
+
+.par_cab_visit {
+    text-align:center;
+    line-height:20px;
+    font-weight: bold;
+    font-size:12px;
+}
+
+.par_cab_id {
+    text-align:center;
+    line-height:15px;
+    font-size:10px;
+    padding-bottom:5px;
+}
+
+.cab_visit{
+    width:335px;
+    float: left;
+    clear: none;
+}
+
+.nome_det{
+    width:230px;
+    float: left;
+    clear: none;
+}
+
+.nome_det_first{
+    width:230px;
+    float: left;
+    clear: none;
+    padding-top: 5px;
+}
+.pais_det{
+    width:335px;
+    float: left;
+    clear: none;
+}
+
+.linha_curta{
+    width:230px;
+    float: left;
+    clear: none;
+}
+
+.linha_curta_visit{
+    width:200px;
+    float: left;
+    clear: none;
+}
+
+.linha_longa{
+    width:335px;
+    float: left;
+    clear: none;
+}
+
+div.quebra_pag{
+    height: 1px;
+    font-size:1px;
+}
+/* FIM DOS FORMATOS PARA O CARTAO DE IDENTIFICAÇÃO */
+
+table#fixa {
+    table-layout: fixed;
+    word-wrap:break-word;
+}
+
+table.bordasimples {
+    border-collapse: collapse;
+}
+
+table.bordasimples tr td {border:1px solid #000;}
+
+table.bordasimples_f {
+    border-collapse: collapse;
+    table-layout: fixed;
+    word-wrap:break-word;
+}
+
+table.bordasimples_f tr td {border:1px solid #000;}
+
+td {
+    vertical-align: middle;
+    padding: 3px 1px 3px 3px;
+}
+
+td.nopading {
+    vertical-align: middle;
+    padding: 0px;
+}
+
+td.digital {
+    vertical-align: text-top;
+    padding: 3px 1px;
+}
+
+td.pol {
+    vertical-align: text-top;
+    font-size:8px;
+    padding: 3px 1px;
+}
+
+td.ass_id {
+    vertical-align: text-bottom;
+    font-size:8px;
+    padding: 3px 1px;
+}
+
+
+
+
+@media print {
+
+    ._Header {
+        position:fixed;
+        top: 1px;
+        float: left;
+        clear: none;
+    }
+
+    ._Footer {
+        position:fixed;
+        bottom: 0;
+    }
+
+}
